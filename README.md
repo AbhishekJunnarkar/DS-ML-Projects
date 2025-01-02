@@ -10,3 +10,8 @@ billion (Rs. 10,676 crore). This mission involves a plan for the effective use o
 AI to promote financial inclusion, supplement the education sector, and transform the urban
 infrastructure. Source: IBEF 2023.
 
+# Objective
+ - One or more bitbucket projects as a working model for each of the modules
+ - This bitbucket to be a hostable website, content and format to be written in the way.
+ - Each project to have a specific goal and outcome and can be deployed and exposed as a service.
+
