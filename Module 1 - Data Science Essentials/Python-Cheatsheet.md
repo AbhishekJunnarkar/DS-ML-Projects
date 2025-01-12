@@ -4,6 +4,55 @@
 
 ## **Table of Contents**
 
+Here’s a **Table of Contents (TOC)** for a Python cheatsheet that covers essential and advanced Python concepts:
+
+---
+
+## **Table of Contents**
+
+### **1. Basics**
+
+### **2. Operators**
+
+### **3. Control Flow**
+
+### **4. Functions**
+
+### **5. Data Structures**
+
+### **6. Modules and Packages**
+
+### **7. File Handling**
+
+### **8. Object-Oriented Programming (OOP)**
+
+### **9. Error and Exception Handling**
+
+### **10. Advanced Topics**
+
+### **11. Working with Libraries**
+
+### **12. Testing**
+
+### **13. Debugging and Profiling**
+
+### **14. Working with Databases**
+
+### **15. Networking**
+
+### **16. Working with APIs**
+
+### **17. Multithreading and Multiprocessing**
+
+### **18. Web Development Basics**
+
+### **19. Data Science and Machine Learning**
+
+### **20. Miscellaneous**
+
+---
+
+
 ### **1. Basics**
    - Introduction to Python
    - Python Syntax and Indentation
