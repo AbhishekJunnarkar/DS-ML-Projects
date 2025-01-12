@@ -230,6 +230,171 @@ The expanded **Operators** section for the Python cheatsheet:
    - Loops (`for`, `while`)
    - Loop Control Statements (`break`, `continue`, `pass`)
 
+---
+
+#### **3.1 Conditional Statements**
+Control the flow of execution based on conditions.
+
+##### **`if` Statement**
+Executes a block of code if the condition is `True`.
+
+```python
+x = 10
+if x > 5:
+    print("x is greater than 5")
+```
+
+##### **`if-else` Statement**
+Executes one block if the condition is `True`, and another if it is `False`.
+
+```python
+x = 10
+if x > 15:
+    print("x is greater than 15")
+else:
+    print("x is not greater than 15")
+```
+
+##### **`if-elif-else` Statement**
+Used to check multiple conditions.
+
+```python
+x = 10
+if x > 15:
+    print("x is greater than 15")
+elif x > 5:
+    print("x is greater than 5 but not greater than 15")
+else:
+    print("x is 5 or less")
+```
+
+##### **Nested `if` Statements**
+You can nest `if` statements to check multiple conditions.
+
+```python
+x = 10
+if x > 5:
+    if x % 2 == 0:
+        print("x is greater than 5 and even")
+```
+
+---
+
+#### **3.2 Loops**
+Loops allow repeated execution of a block of code.
+
+##### **`for` Loop**
+Iterates over a sequence (list, tuple, string, etc.).
+
+```python
+for i in range(5):  # Iterates from 0 to 4
+    print(i)
+```
+
+- **`range()`** function:
+  - `range(5)`: 0, 1, 2, 3, 4
+  - `range(1, 5)`: 1, 2, 3, 4
+  - `range(1, 10, 2)`: 1, 3, 5, 7, 9 (step of 2)
+
+- Iterating through other sequences:
+  ```python
+  fruits = ["apple", "banana", "cherry"]
+  for fruit in fruits:
+      print(fruit)
+  ```
+
+##### **`while` Loop**
+Executes as long as the condition is `True`.
+
+```python
+x = 0
+while x < 5:
+    print(x)
+    x += 1  # Increment to avoid infinite loop
+```
+
+---
+
+#### **3.3 Loop Control Statements**
+Control the execution of loops.
+
+##### **`break`**
+Exits the loop prematurely.
+
+```python
+for i in range(10):
+    if i == 5:
+        break
+    print(i)
+```
+
+##### **`continue`**
+Skips the current iteration and proceeds to the next.
+
+```python
+for i in range(10):
+    if i % 2 == 0:
+        continue
+    print(i)
+```
+
+##### **`pass`**
+Does nothing. Used as a placeholder.
+
+```python
+for i in range(5):
+    if i == 3:
+        pass  # Placeholder for future code
+    print(i)
+```
+
+---
+
+#### **3.4 Nested Loops**
+Loops inside loops.
+
+```python
+for i in range(3):
+    for j in range(2):
+        print(f"i: {i}, j: {j}")
+```
+
+---
+
+#### **3.5 `else` with Loops**
+The `else` block runs if the loop completes without encountering a `break`.
+
+```python
+for i in range(5):
+    if i == 3:
+        break
+else:
+    print("Loop completed without break")  # Will not execute
+```
+
+---
+
+#### **3.6 Pattern Printing**
+Using loops to print patterns.
+
+Example: Printing a pyramid.
+```python
+rows = 5
+for i in range(1, rows + 1):
+    print("*" * i)
+```
+
+Output:
+```
+*
+**
+***
+****
+*****
+```
+
+---
+
 ### **4. Functions**
    - Defining Functions
    - Function Arguments (Positional, Keyword, Default, *args, **kwargs)
