@@ -125,6 +125,106 @@ The expanded **Basics** section for Python cheatsheet:
    - Bitwise Operators
    - Membership and Identity Operators
 
+The expanded **Operators** section for the Python cheatsheet:
+
+---
+
+#### **2.1 Arithmetic Operators**
+- Used for mathematical operations.
+  
+| Operator | Description           | Example           | Result   |
+|----------|-----------------------|-------------------|----------|
+| `+`      | Addition              | `5 + 3`           | `8`      |
+| `-`      | Subtraction           | `5 - 3`           | `2`      |
+| `*`      | Multiplication        | `5 * 3`           | `15`     |
+| `/`      | Division              | `5 / 3`           | `1.666...` |
+| `//`     | Floor Division        | `5 // 3`          | `1`      |
+| `%`      | Modulus (Remainder)   | `5 % 3`           | `2`      |
+| `**`     | Exponentiation        | `5 ** 3`          | `125`    |
+
+#### **2.2 Comparison Operators**
+- Compare values and return a Boolean (`True` or `False`).
+
+| Operator | Description           | Example           | Result   |
+|----------|-----------------------|-------------------|----------|
+| `==`     | Equal to              | `5 == 3`          | `False`  |
+| `!=`     | Not equal to          | `5 != 3`          | `True`   |
+| `>`      | Greater than          | `5 > 3`           | `True`   |
+| `<`      | Less than             | `5 < 3`           | `False`  |
+| `>=`     | Greater than or equal | `5 >= 3`          | `True`   |
+| `<=`     | Less than or equal    | `5 <= 3`          | `False`  |
+
+#### **2.3 Logical Operators**
+- Combine conditional statements.
+
+| Operator | Description           | Example                     | Result   |
+|----------|-----------------------|-----------------------------|----------|
+| `and`    | Logical AND           | `True and False`            | `False`  |
+| `or`     | Logical OR            | `True or False`             | `True`   |
+| `not`    | Logical NOT           | `not True`                  | `False`  |
+
+#### **2.4 Assignment Operators**
+- Assign values to variables, with support for shorthand operations.
+
+| Operator | Description           | Example           | Equivalent To |
+|----------|-----------------------|-------------------|---------------|
+| `=`      | Assign                | `x = 5`           | `x = 5`       |
+| `+=`     | Add and assign         | `x += 3`          | `x = x + 3`   |
+| `-=`     | Subtract and assign    | `x -= 3`          | `x = x - 3`   |
+| `*=`     | Multiply and assign    | `x *= 3`          | `x = x * 3`   |
+| `/=`     | Divide and assign      | `x /= 3`          | `x = x / 3`   |
+| `//=`    | Floor divide and assign | `x //= 3`        | `x = x // 3`  |
+| `%=`     | Modulus and assign     | `x %= 3`          | `x = x % 3`   |
+| `**=`    | Exponent and assign    | `x **= 3`         | `x = x ** 3`  |
+
+#### **2.5 Bitwise Operators**
+- Perform operations at the bit level.
+
+| Operator | Description           | Example           | Result   |
+|----------|-----------------------|-------------------|----------|
+| `&`      | Bitwise AND           | `5 & 3`           | `1`      |
+| `|`      | Bitwise OR            | `5 | 3`           | `7`      |
+| `^`      | Bitwise XOR           | `5 ^ 3`           | `6`      |
+| `~`      | Bitwise NOT           | `~5`              | `-6`     |
+| `<<`     | Bitwise Left Shift    | `5 << 1`          | `10`     |
+| `>>`     | Bitwise Right Shift   | `5 >> 1`          | `2`      |
+
+#### **2.6 Membership Operators**
+- Test for membership in a sequence (e.g., list, string).
+
+| Operator | Description           | Example           | Result   |
+|----------|-----------------------|-------------------|----------|
+| `in`     | True if value is in the sequence | `'a' in 'apple'` | `True`   |
+| `not in` | True if value is not in the sequence | `'x' not in 'apple'` | `True`   |
+
+#### **2.7 Identity Operators**
+- Check if two variables refer to the same object in memory.
+
+| Operator | Description           | Example           | Result   |
+|----------|-----------------------|-------------------|----------|
+| `is`     | True if same object   | `x is y`          | `True/False` |
+| `is not` | True if not same object | `x is not y`    | `True/False` |
+
+#### **2.8 Operator Precedence**
+- Determines the order in which operators are evaluated.
+
+| Precedence Level | Operators                  |
+|------------------|----------------------------|
+| 1 (Highest)      | `**`                       |
+| 2                | `~`, `+`, `-` (Unary)      |
+| 3                | `*`, `/`, `//`, `%`        |
+| 4                | `+`, `-`                   |
+| 5                | `<<`, `>>`                 |
+| 6                | `&`                        |
+| 7                | `^`                        |
+| 8                | `|`                        |
+| 9                | `in`, `not in`, `is`, `is not`, `<`, `<=`, `>`, `>=`, `!=`, `==` |
+| 10               | `not`                      |
+| 11               | `and`                      |
+| 12 (Lowest)      | `or`                       |
+
+---
+
 ### **3. Control Flow**
    - Conditional Statements (`if`, `elif`, `else`)
    - Loops (`for`, `while`)
