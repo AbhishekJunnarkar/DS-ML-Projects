@@ -1,4 +1,4 @@
-Here’s a **Table of Contents (TOC)** for a Python cheatsheet that covers essential and advanced Python concepts:
+**Table of Contents (TOC)** for a Python cheatsheet that covers essential and advanced Python concepts:
 
 ---
 
@@ -10,6 +10,112 @@ Here’s a **Table of Contents (TOC)** for a Python cheatsheet that covers essen
    - Variables and Data Types
    - Input and Output
    - Comments
+
+The expanded **Basics** section for Python cheatsheet:
+
+---
+
+#### **1.1 Introduction to Python**
+- Python is an interpreted, high-level, and dynamically typed programming language.
+- Created by **Guido van Rossum** in 1991.
+- Python is known for its readability and simplicity.
+- Use Python 3 for modern features and ongoing support.
+
+#### **1.2 Python Syntax and Indentation**
+- Python uses indentation to define code blocks (no curly braces `{}` or `;`).
+  
+  Example:
+  ```python
+  if True:
+      print("Hello, Python!")  # Indented block
+  ```
+
+#### **1.3 Variables and Data Types**
+- Variables are dynamically typed (no need to declare the type explicitly).
+  
+  Example:
+  ```python
+  x = 10  # Integer
+  y = 3.14  # Float
+  name = "Abhishek"  # String
+  is_active = True  # Boolean
+  ```
+
+- **Basic Data Types**:
+  - `int`: Whole numbers (`42`)
+  - `float`: Decimal numbers (`3.1415`)
+  - `str`: Text data (`"Hello"`)
+  - `bool`: True/False values (`True`, `False`)
+
+#### **1.4 Input and Output**
+- **Input**: Reading input from the user.
+  ```python
+  name = input("Enter your name: ")
+  print(f"Hello, {name}!")
+  ```
+
+- **Output**: Printing data to the console.
+  ```python
+  print("Hello, World!")
+  print("Sum:", 5 + 3)
+  ```
+
+#### **1.5 Comments**
+- Use `#` for single-line comments.
+  ```python
+  # This is a single-line comment
+  print("Comments are ignored by Python!")
+  ```
+
+- Use triple quotes (`"""` or `'''`) for multi-line comments or docstrings.
+  ```python
+  """
+  This is a multi-line comment or docstring.
+  Use it for documentation.
+  """
+  ```
+
+#### **1.6 Data Type Conversion**
+- Convert data types using built-in functions:
+  ```python
+  x = int("10")  # Convert string to integer
+  y = float("3.14")  # Convert string to float
+  z = str(123)  # Convert integer to string
+  ```
+
+#### **1.7 Reserved Keywords**
+- Keywords cannot be used as variable names.
+- Common Python keywords: `if`, `else`, `while`, `def`, `class`, `import`, `return`, `pass`, `break`, etc.
+
+#### **1.8 Naming Conventions**
+- Variable names:
+  - Must start with a letter or underscore (`_`).
+  - Can contain letters, numbers, and underscores.
+  - Case-sensitive (`name` and `Name` are different).
+  
+  Examples:
+  ```python
+  my_var = 10
+  _private_var = 20
+  camelCase = "Not Pythonic"
+  snake_case = "Pythonic"
+  ```
+
+#### **1.9 Arithmetic Operations**
+- Python supports basic arithmetic operations:
+  ```python
+  a = 10
+  b = 3
+  print(a + b)  # Addition: 13
+  print(a - b)  # Subtraction: 7
+  print(a * b)  # Multiplication: 30
+  print(a / b)  # Division: 3.333...
+  print(a // b)  # Floor Division: 3
+  print(a % b)  # Modulus: 1
+  print(a ** b)  # Exponentiation: 1000
+  ```
+
+---
 
 ### **2. Operators**
    - Arithmetic Operators
