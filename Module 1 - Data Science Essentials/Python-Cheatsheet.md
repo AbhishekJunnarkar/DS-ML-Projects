@@ -6,7 +6,7 @@
 
 ### **1. Basics**
 
-### **2. Operators** 
+### **2. Operators** [Here](https://github.com/AbhishekJunnarkar/DS-ML-Projects/blob/main/Module%201%20-%20Data%20Science%20Essentials/Python-Cheatsheet.md#2operators)
 
 ### **3. Control Flow**
 
