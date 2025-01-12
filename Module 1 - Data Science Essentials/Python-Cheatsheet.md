@@ -4,9 +4,9 @@
 
 ## **Table of Contents**
 
-### **1. Basics**
+### [**1. Basics**](https://github.com/AbhishekJunnarkar/DS-ML-Projects/blob/main/Module%201%20-%20Data%20Science%20Essentials/Python-Cheatsheet.md#2basics)
 
-### **2. Operators** [Link](https://github.com/AbhishekJunnarkar/DS-ML-Projects/blob/main/Module%201%20-%20Data%20Science%20Essentials/Python-Cheatsheet.md#2operators)
+### [**2. Operators**](https://github.com/AbhishekJunnarkar/DS-ML-Projects/blob/main/Module%201%20-%20Data%20Science%20Essentials/Python-Cheatsheet.md#2operators)
 
 ### **3. Control Flow**
 
