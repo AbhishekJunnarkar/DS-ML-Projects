@@ -1,10 +1,4 @@
-**Table of Contents (TOC)** for a Python cheatsheet that covers essential and advanced Python concepts:
-
----
-
-## **Table of Contents**
-
-Here’s a **Table of Contents (TOC)** for a Python cheatsheet that covers essential and advanced Python concepts:
+# Python cheatsheet covering essential and advanced Python concepts:
 
 ---
 
@@ -12,7 +6,7 @@ Here’s a **Table of Contents (TOC)** for a Python cheatsheet that covers essen
 
 ### **1. Basics**
 
-### **2. Operators**
+### **2. Operators** 
 
 ### **3. Control Flow**
 
@@ -166,7 +160,7 @@ The expanded **Basics** section for Python cheatsheet:
 
 ---
 
-### **2. Operators**
+### **2.Operators**
    - Arithmetic Operators
    - Comparison Operators
    - Logical Operators
