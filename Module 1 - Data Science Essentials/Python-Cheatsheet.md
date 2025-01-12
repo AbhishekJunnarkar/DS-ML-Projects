@@ -1,10 +1,4 @@
-**Table of Contents (TOC)** for a Python cheatsheet that covers essential and advanced Python concepts:
-
----
-
-## **Table of Contents**
-
-Here’s a **Table of Contents (TOC)** for a Python cheatsheet that covers essential and advanced Python concepts:
+# Python cheatsheet covering essential and advanced Python concepts:
 
 ---
 
