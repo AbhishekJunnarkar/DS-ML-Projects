@@ -4,45 +4,45 @@
 
 ## **Table of Contents**
 
-### **1. Basics**
+### [**1. Basics**](https://github.com/AbhishekJunnarkar/DS-ML-Projects/blob/main/Module%201%20-%20Data%20Science%20Essentials/Python-Cheatsheet.md#2basics)
 
-### **2. Operators** [Link](https://github.com/AbhishekJunnarkar/DS-ML-Projects/blob/main/Module%201%20-%20Data%20Science%20Essentials/Python-Cheatsheet.md#2operators)
+### [**2. Operators**](https://github.com/AbhishekJunnarkar/DS-ML-Projects/blob/main/Module%201%20-%20Data%20Science%20Essentials/Python-Cheatsheet.md#2operators)
 
-### **3. Control Flow**
+### [**3. Control Flow**](https://github.com/AbhishekJunnarkar/DS-ML-Projects/blob/main/Module%201%20-%20Data%20Science%20Essentials/Python-Cheatsheet.md#3-control-flow-1)
 
-### **4. Functions**
+### [**4. Functions**]()
 
-### **5. Data Structures**
+### [**5. Data Structures**]()
 
-### **6. Modules and Packages**
+### [**6. Modules and Packages**]()
 
-### **7. File Handling**
+### [**7. File Handling**]()
 
-### **8. Object-Oriented Programming (OOP)**
+### [**8. Object-Oriented Programming (OOP)**]()
 
-### **9. Error and Exception Handling**
+### [**9. Error and Exception Handling**]()
 
-### **10. Advanced Topics**
+### [**10. Advanced Topics**]()
 
-### **11. Working with Libraries**
+### [**11. Working with Libraries**]()
 
-### **12. Testing**
+### [**12. Testing**]()
 
-### **13. Debugging and Profiling**
+### [**13. Debugging and Profiling**]()
 
-### **14. Working with Databases**
+### [**14. Working with Databases**]()
 
-### **15. Networking**
+### [**15. Networking**]()
 
-### **16. Working with APIs**
+### [**16. Working with APIs**]()
 
-### **17. Multithreading and Multiprocessing**
+### [**17. Multithreading and Multiprocessing**]()
 
-### **18. Web Development Basics**
+### [**18. Web Development Basics**]()
 
-### **19. Data Science and Machine Learning**
+### [**19. Data Science and Machine Learning**]()
 
-### **20. Miscellaneous**
+### [**20. Miscellaneous**]()
 
 ---
 
