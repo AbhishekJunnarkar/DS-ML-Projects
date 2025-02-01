@@ -100,6 +100,8 @@ Geometric Interpretation: The dot product measures the similarity or mapping bet
 - Arithmetic Operations: Basic arithmetic operations like addition, subtraction, and multiplication can be performed on matrices.
 - Content: Matrices can contain numbers, symbols, or expressions.
 
+![2X2 MATRIX](RESOURCES/IMAGES/2X2MATRIX.png)
+
 ## Types of Matrices
 
 - Rectangular Matrix: Has a different number of rows and columns (m by n).

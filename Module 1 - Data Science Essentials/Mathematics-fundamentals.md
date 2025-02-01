@@ -2,9 +2,16 @@
 
 ## 1. Algebraic Equations
 
+### Definition 
 Algebraic Equations are mathematical statements that use variables, constants, and mathematical operations like addition, 
 subtraction, multiplication, division, and exponents. They represent relationships between quantities and are set equal 
 to each other using an equal sign (=).
+
+### General Properties
+
+### Interesting properties
+
+### Examples
 
 ### Structure of an Algebraic Equation
 
@@ -68,11 +75,43 @@ Solve \(x^2 - 5x + 6 = 0\):
 
 Algebraic equations are the foundation of mathematics and are widely used in physics, engineering, finance, and many other fields!
 ```
-# 2. Determinants
 
+--------
+## 2. Determinants
+
+### Definition
+
+
+### Cofactor
+
+
+### Properties of Determinants
+
+-------
 ## 3. Linear Equations and Matrices
 
-## 4. Probablity
+### Definition
+
+### Types
+
+### Equality
+
+### Addition and Subtraction
+
+### Multiplication by scalar
+
+### Matrix Multiplication
+
+### Transpose of a Matrix
+
+### Adjoin of a square Matrix
+
+### Inverse of a Matrix
+
+### Cramer's rule
+
+
+## 4. Probability
 
 ## 5. Statistics
 
