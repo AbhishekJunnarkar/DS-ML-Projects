@@ -39,6 +39,7 @@ Application: Understanding probability helps in making informed decisions and pr
 - Sum of Probabilities: The total probability of all possible outcomes always equals 100%.
 - Sample Space: The set of all possible outcomes in a probability scenario.
 
+
 ### Permutations
 
 - Definition: Permutations consider the order of items. For example, AB and BA are different permutations.
