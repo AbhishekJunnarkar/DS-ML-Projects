@@ -70,5 +70,81 @@ For example, selecting the top 3 finishers out of 8 runners is calculated as 8! 
 
 # Statistics Foundations 3: Using Datasets
 
+### Sampling
+
+### Sample size
+
+### Standard Error
+
+#### standard error for proportions
+- Standard Error Definition: The standard error is the standard deviation of the proportion distribution in a sample.
+- Impact of Sample Size: The size of the standard error depends on the sample size; larger sample sizes result in smaller standard errors.
+- Application in Real-World Scenarios: Standard errors help understand large populations through simple random samples, and deviations beyond the standard error can indicate unique local conditions or potential flaws in data collection.
+
+#### Sampling distribution of the mean
+
+- Central Limit Theorem: This theorem helps in approximating the population mean by using simple random samples.
+- Sample Size and Accuracy: Increasing the number of samples and the sample size leads to a more accurate approximation of the true population mean.
+- Application Example: By taking multiple random samples of basketball players' weights, the mean of the sample means closely approximates the true population mean.
+
+#### Standard error for means
+
+- Standard Error Calculation: The standard error for sample means is calculated using the standard deviation of the sample means and the sample size.
+- Impact of Sample Size: Larger sample sizes result in smaller standard errors, making the sample mean a more accurate estimate of the population mean.
+- Practical Example: The video uses the example of coffee order times to illustrate how to calculate the standard error and understand its implications for estimating the population mean.
+
+#### Questions
+80% of customers pay with a debit or credit card. 
+25 customers are chosen at random each day. 
+68% of the samples would have p-hats between:
+
+(0.80*0.20)/25 = 0.0064. Next take the square root of 0.0064, this provides a standard dev. of 0.08 or 8%. The p-hats would be between both 80%-8% and 80%+8%.
+
+### Confidence Intervals
+
+#### Introduction to confidence Intervals
+
+- Confidence Intervals: A confidence interval provides a range within which we can be certain the population mean lies, based on a single random sample.
+- 95% Confidence Level: If we create multiple confidence intervals from different samples, 95% of these intervals will contain the true population mean.
+- Efficiency: Confidence intervals allow statisticians to make reliable estimates about a population mean using just one random sample, making it a powerful and resource-efficient method.
+
+#### Components of confidence Intervals
+
+
+- Formula Components: The confidence interval is calculated using the sample proportion (p-hat), the Z-score, and the standard error.
+- Upper and Lower Limits: The upper limit is p-hat plus the Z-score times the standard error, while the lower limit is p-hat minus the Z-score times the standard error.
+- Example Calculation: Using a sample proportion of 0.55, a Z-score of 2.0, and a standard error of 0.05, the confidence interval for the population proportion is between 0.45 and 0.65.
+
+#### Creating a 95% confidence interval for a population
+
+To calculate a 95% confidence interval for a population, follow these steps:
+
+Identify the Sample Proportion (p-hat): This is the proportion of your sample that has the characteristic of interest. For example, if 55 out of 100 voters support candidate A, p-hat is 0.55.
+
+Find the Z-Score for 95% Confidence: The Z-score for a 95% confidence interval is 1.96. This means that 95% of the data falls within 1.96 standard deviations from the mean.
+
+Calculate the Standard Error (SE): Use the formula for standard error:
+[
+SE = \sqrt{\frac{p-hat \times (1 - p-hat)}{n}}
+]
+where ( n ) is the sample size. For example, with p-hat = 0.55 and n = 100, SE = 0.05.
+
+Determine the Confidence Interval:
+
+Upper Limit: ( p-hat + (Z \times SE) )
+Lower Limit: ( p-hat - (Z \times SE) )
+
+Using the example values:
+
+Upper Limit: ( 0.55 + (1.96 \times 0.05) = 0.648 )
+Lower Limit: ( 0.55 - (1.96 \times 0.05) = 0.452 )
+
+
+So, the 95% confidence interval is between 0.452 and 0.648. This means you can be 95% confident that the true population proportion lies within this range.
+
+#### Alternative confidence intervals
+
+#### Confidence intervals with unexpected outcomes
+
 
 # Statistics Foundations 4: Advanced Statistics
