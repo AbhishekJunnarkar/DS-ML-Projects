@@ -9,6 +9,7 @@
    - Fundamentals of machine learning [here](MachineLearningfoundations-LinearAlgebra.md)
 3. Measures and Descriptors of Data, Distributions and Estimation
 
+
 4. Basics of Data Bases
 5. Exploratory Data Analysis
 6. Hypothesis Testing and Evaluation
