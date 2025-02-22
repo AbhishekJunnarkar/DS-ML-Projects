@@ -1,9 +1,61 @@
 # Statistics foundation 1: The Basics
 
+# Mean, Median, and Mode  
 
-### Data and Charts
+## 1. Mean (Average)  
+The **mean** is the **sum of all values divided by the total number of values**. It represents the central value of a data set.  
 
-### The Middle
+**Formula:**  
+
+Mean = (Σx) / n
+
+where:  
+- **Σx** = Sum of all values  
+- **n** = Total number of values  
+
+**Example:**  
+For the numbers **5, 10, 15, 20**:  
+
+Mean = (5+10+15+20) / 4 = 50 / 4 = 12.5
+
+
+---
+
+## 2. Median (Middle Value)  
+The **median** is the **middle number** in an **ordered data set** (from smallest to largest).  
+
+- If the number of values is **odd**, the median is the middle number.  
+- If the number of values is **even**, the median is the **average of the two middle numbers**.  
+
+**Example 1 (Odd Set):**  
+Numbers: **3, 7, 9** → **Median = 7** (middle value)  
+
+**Example 2 (Even Set):**  
+Numbers: **2, 4, 6, 8** → **Median = (4+6) ÷ 2 = 5**  
+
+---
+
+## 3. Mode (Most Frequent Value)  
+The **mode** is the **number that appears most frequently** in a dataset.  
+
+- A dataset **can have more than one mode**.  
+- If no number repeats, the dataset has **no mode**.  
+
+**Example 1 (Single Mode):**  
+Numbers: **2, 3, 3, 5, 7** → **Mode = 3** (appears twice)  
+
+**Example 2 (Multiple Modes - Bimodal):**  
+Numbers: **1, 2, 2, 3, 3, 4** → **Modes = 2 and 3** (both appear twice)  
+
+---
+
+## Quick Summary  
+
+| Measure  | Definition | When to Use |
+|----------|------------|-------------|
+| **Mean** | Sum of values ÷ number of values | Best for balanced data without extreme values (outliers) |
+| **Median** | Middle value when ordered | Best for skewed data or when outliers are present |
+| **Mode** | Most frequently occurring value | Best for categorical data or when identifying common values |
 
 ----
 
