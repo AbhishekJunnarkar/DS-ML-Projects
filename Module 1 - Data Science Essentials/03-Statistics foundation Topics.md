@@ -62,58 +62,13 @@ Numbers: **1, 2, 2, 3, 3, 4** → **Modes = 2 and 3** (both appear twice)
 
 ### Variability
 
-Variability refers to how spread out or dispersed the data points in a data set are. 
-While measures like mean, median, and mode provide central values, they don't show how much the data points
-differ from each other. Variability helps us understand this spread. 
-
-
 ###### Introduction to variability
-Two common measures of variability discussed in the course are:
-
-- Range: The difference between the highest and lowest values in a data set.
-- Standard Deviation: A measure of how much the data points deviate from the mean.
-
 
 ###### Range
 
-The range is a measure of variability that looks at the spread of your data set by considering the edges. 
-To calculate the range, you subtract the smallest data point from the largest data point in the data set. 
-For example, if your data set has a minimum value of 10 and a maximum value of 80, 
-the range would be 70 (80 - 10). The range helps to understand the overall spread of the data, 
-but it can be influenced by outliers, as it only considers the two extreme values.
-
 ###### Standard Deviation
 
-Standard deviation is a measure of how spread out the numbers in a data set are around the mean (average). 
-It quantifies the amount of variation or dispersion in the data. A low standard deviation means that the 
-data points are close to the mean, while a high standard deviation indicates that the data points are 
-spread out over a wider range.
-
-**Z Score**
-
-A Z score, is a measure that describes how far a 
-specific data point is from the mean of the data set, in terms of standard deviations. 
-The formula to calculate a Z score is:
-
-[ Z = \frac{(X - \mu)}{\sigma} ]
-
-where ( X ) is the data point, ( \mu ) is the mean of the data set, and ( \sigma ) is the standard deviation.
-
-
-
 ###### Empirical Rule 
-
-![Imperical Rule](/module1-Resources/Imperical-rule.png)
-
-The empirical rule, is a useful guideline for understanding the distribution of data points in 
-a normally distributed data set. Here are the key points:
-
-- Normal Distribution: The data points are symmetrically distributed around the mean, forming a bell-shaped curve.
-- 68% Rule: Approximately 68% of the data points fall within one standard deviation of the mean.
-- 95% Rule: About 95% of the data points fall within two standard deviations of the mean.
-- 99.7% Rule: Nearly 99.7% of the data points fall within three standard deviations of the mean.
-
-This rule helps you quickly understand how data points are spread out in a normal distribution and identify outliers.
 
 ###### Outliers
 
