@@ -19,7 +19,6 @@ For the numbers **5, 10, 15, 20**:
 
 Mean = (5+10+15+20) / 4 = 50 / 4 = 12.5
 
-
 ---
 
 ## 2. Median (Middle Value)  
