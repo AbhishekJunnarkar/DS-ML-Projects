@@ -68,7 +68,7 @@ Numbers: **1, 2, 2, 3, 3, 4** → **Modes = 2 and 3** (both appear twice)
 ###### Standard Deviation
 
 ###### Empirical Rule 
-
+![Imperical rule](Module 1 - Data Science Essentials/module1-Resources/Imperical-rule.png)
 ###### Outliers
 
 ----
