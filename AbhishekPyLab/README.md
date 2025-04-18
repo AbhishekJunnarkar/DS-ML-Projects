@@ -20,3 +20,9 @@ $ brew install jupyterlab
 
 $ jupyter --version
 
+## Step 4: Scipy
+Install
+- brew install scipy
+
+Verify command:
+- python3 -c "import scipy; print(scipy.__version__)"
