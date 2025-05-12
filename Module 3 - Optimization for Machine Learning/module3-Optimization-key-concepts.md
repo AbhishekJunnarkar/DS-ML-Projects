@@ -5,12 +5,42 @@
 ## 1. Optimization Formulations
 
 - What is Optimization
+- 
+- What does it mean to optimize a function?
+  - To optimize a function means to find the input value(s) (e.g., x) where the function:
+    - Reaches a maximum (peak)
+    - Or a minimum (valley)
+
+- What Is the Power Rule?
+   If you have a function like:
+
+   f(x) = xⁿ
+
+   Then the derivative is:
+
+   f′(x) = n·xⁿ⁻¹
+   In simple words:
+
+   Bring the exponent n down in front as a multiplier
+   Then subtract 1 from the exponent
+
+   Examples
+    Function	Derivative (using power rule)
+    f(x) = x²	f′(x) = 2x
+    f(x) = x³	f′(x) = 3x²
+    f(x) = 5x⁴	f′(x) = 20x³
+    f(x) = −2x²	f′(x) = −4x
+    f(x) = x	f′(x) = 1
+    f(x) = constant (e.g., 7)	f′(x) = 0
+
 - Single variable objective function 
 - Multi variable objective function
 - Tayler Series Expansion
 - Concept of Optimization
 - Maxima
+  - Where the slope of the curve is Maximum or the derivative of the function is zero.
 - Minima
+  - Where the slope of the curve is minimum or the derivative of the function is zero.
 - Saddle point
 - Generalized optimality conditions
 - Necessary conditions
