@@ -1,5 +1,11 @@
 # Decision Trees and Classification
 
+- An introduction to decision trees and their applications in supervised machine learning.
+- How to build and visualize classification and regression trees in Python.
+- Techniques for measuring impurity and pruning decision trees to improve model performance.
+- Practical tips for when and why to use decision trees in various scenarios.
+- An overview of next steps for applying decision trees in different domains.
+
 ## Recall 
 Recall is especially important in evaluating classification models like decision trees.
 
