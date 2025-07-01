@@ -1,6 +1,6 @@
 # Objective
 
-**Build a model to predict the house prices. The columns are self explanatory**
+**Build a model to predict the house prices. The columns are self-explanatory**
 
 ## Expected Outcomes
 - Programme Directors are interested to see the following:
@@ -11,6 +11,17 @@
 - Final recommendations wrt to the model
 
 ## Steps for Modelling
+
+### Data Collection
+
+- Accuracy: Ensure the data is accurate, especially for supervised learning, as it serves as the ground truth for training models.
+- Relevance: Collect data that is relevant to the problem you are trying to solve. Irrelevant data can negatively impact model performance.
+- Quantity: The amount of data needed varies by algorithm. Some require more data to provide meaningful results.
+- Variability: Include diverse data to help the model understand different scenarios and improve its predictions.
+- Ethics: Address ethical issues such as privacy, security, informed consent, and bias during data collection to avoid harmful biases in predictions.
+
+### Data Exploration
+
 
 #### Step 1: Clean the Data
 
