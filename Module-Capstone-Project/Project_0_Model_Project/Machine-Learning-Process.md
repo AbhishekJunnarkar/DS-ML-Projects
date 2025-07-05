@@ -13,6 +13,7 @@ A typical machine Learning process includes the below 6 building blocks.
 - Variability: Include diverse data to help the model understand different scenarios and improve its predictions.
 - Ethics: Address ethical issues such as privacy, security, informed consent, and bias during data collection to avoid harmful biases in predictions.
 
+
 #### 1.1 How to import data in Python
 
 - Pandas Package: Python's pandas package is powerful and easy to use for data analysis, providing functions for creating, structuring, and importing data.

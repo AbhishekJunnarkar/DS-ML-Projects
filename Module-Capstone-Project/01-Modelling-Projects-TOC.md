@@ -1,5 +1,6 @@
 # Data Modelling Projects
 
+## Supervised Machine Learning Projects 
 | Project Name                           | Data collection | Data Exploration | Data Visualization | Data Modelling | Data Optimization |
 |----------------------------------------|-----------------|------------------|--------------------|----------------|-------------------|
 | Brics                                  | Step 1           | Step 2           | Step 3             | Step 4         | Step 5            |
@@ -11,3 +12,52 @@
 | Tanishq - Recommendations model        | Step 1           | Step 2           | Step 3             | Step 4         | Step 5            |
 | Model for Predicting the House Prizes  | Step 1           | Step 2           | Step 3             | Step 4         | Step 5            |
 | Predict the success of song on spotify | Step 1           | Step 2           | Step 3             | Step 4         | Step 5            |
+
+## Un-supervised Machine Learning Projects
+
+| Project Name                           | Data collection | Data Exploration | Data Visualization | Data Modelling | Data Optimization |
+|----------------------------------------|-----------------|------------------|--------------------|----------------|-------------------|
+| Netflix Movie Recommendation Model     | Step 1           | Step 2           | Step 3             | Step 4         | Step 5            |
+
+
+## Reinforcement Machine Learning Projects
+
+
+| Project Name | Data collection | Data Exploration | Data Visualization | Data Modelling | Data Optimization |
+|--------------|-----------------|------------------|--------------------|----------------|-------------------|
+| Project name | Step 1           | Step 2           | Step 3             | Step 4         | Step 5            |
+
+
+## Statistical Machine Learning Projects
+
+
+| Project Name | Data collection | Data Exploration | Data Visualization | Data Modelling | Data Optimization |
+|--------------|-----------------|------------------|--------------------|----------------|-------------------|
+| Project name | Step 1           | Step 2           | Step 3             | Step 4         | Step 5            |
+
+## Large Language Model Machine Learning Projects
+
+
+| Project Name | Data collection | Data Exploration | Data Visualization | Data Modelling | Data Optimization |
+|--------------|-----------------|------------------|--------------------|----------------|-------------------|
+| Project name | Step 1           | Step 2           | Step 3             | Step 4         | Step 5            |
+
+## Generative AI Machine Learning Projects
+
+
+| Project Name | Data collection | Data Exploration | Data Visualization | Data Modelling | Data Optimization |
+|--------------|-----------------|------------------|--------------------|----------------|-------------------|
+| Project name | Step 1           | Step 2           | Step 3             | Step 4         | Step 5            |
+
+## Deep Learning Machine Learning Projects
+
+
+| Project Name | Data collection | Data Exploration | Data Visualization | Data Modelling | Data Optimization |
+|--------------|-----------------|------------------|--------------------|----------------|-------------------|
+| Project name | Step 1           | Step 2           | Step 3             | Step 4         | Step 5            |
+
+## Data Mining Machine Learning Projects
+
+| Project Name | Data collection | Data Exploration | Data Visualization | Data Modelling | Data Optimization |
+|--------------|-----------------|------------------|--------------------|----------------|-------------------|
+| Project name | Step 1           | Step 2           | Step 3             | Step 4         | Step 5            |
