@@ -24,9 +24,37 @@ A typical machine Learning process includes the below 6 building blocks.
 
 ### Data Exploration
 
+- Identifying Missing Data: Use the isnull method in Pandas to create a mask that identifies rows with missing values.
+- Removing Missing Data: Use the dropna method to remove rows or columns with missing values. You can specify conditions to remove only certain rows or columns.
+- Replacing Missing Data: Use the fillna method to replace missing values with specified values or functions, such as the median of non-missing values.
 
 ### Data Preparation
 
+**Normalizing the data**
+
+- Normalization Purpose: Ensures data values share a particular property, often scaling them to a specified range, which reduces model complexity and makes results easier to interpret.
+- Z-Score Normalization: Transforms data to have a mean of zero and a standard deviation of one. Useful when there are no significant outliers.
+- Min-Max Normalization: Scales data to a user-defined range, typically between 0 and 1. Suitable when data needs to have specific lower and upper bounds.
+- Log Transformation: Replaces data values with their logarithms to minimize the impact of outliers. Works only for positive values.
+
+**How to Normalize data in Python**
+
+- Normalization Purpose: Transform data to make it suitable for machine learning by ensuring it conforms to specific characteristics.
+- Min-Max Normalization: Uses the MinMaxScaler from scikit-learn to scale data to a range between 0 and 1.
+- Z-Score Normalization: Uses the StandardScaler from scikit-learn to scale data so that it has a mean of 0 and a standard deviation of 1.
+
+**Sampling the data**
+
+- Purpose of Sampling: Sampling is used to reduce the size of a dataset or to split it into training and test sets for model evaluation.
+- Random Sampling Without Replacement: Selects a subset from the population without reselecting the same instance.
+- Random Sampling With Replacement: Allows reselection of the same instance, useful for techniques like bootstrapping.
+- Stratified Random Sampling: Ensures the sample maintains the same distribution of a particular feature as the overall population.
+
+**How to Sample data using Python**
+
+- Splitting Data: Before training a machine learning model, data is split into training and test sets using sampling approaches.
+- Simple Random Sampling: The train_test_split function from the sklearn.model_selection package is used to split data into training and test sets, typically allocating 25% of data to the test set by default.
+- Stratified Random Sampling: Ensures the distribution of values for a specific column is maintained between the original, training, and test data by using the stratify parameter in the train_test_split function.
 
 ### Modelling
 
