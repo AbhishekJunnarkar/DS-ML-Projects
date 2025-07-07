@@ -30,6 +30,12 @@ A typical machine Learning process includes the below 6 building blocks.
 
 ### Data Preparation
 
+**Common data quality issues**
+
+- Data Preparation: Ensuring data is suitable for machine learning is crucial. Poor quality input leads to unreliable output.
+- Common Issues: Missing data, outliers, and class imbalance are typical data quality problems.
+- Addressing Issues: Techniques like imputation for missing data, understanding outliers, and under-sampling the majority class to handle class imbalance are essential steps in data preparation.
+
 **Normalizing the data**
 
 - Normalization Purpose: Ensures data values share a particular property, often scaling them to a specified range, which reduces model complexity and makes results easier to interpret.
