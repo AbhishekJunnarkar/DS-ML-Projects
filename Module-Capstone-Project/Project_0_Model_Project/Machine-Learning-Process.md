@@ -62,6 +62,16 @@ A typical machine Learning process includes the below 6 building blocks.
 - Simple Random Sampling: The train_test_split function from the sklearn.model_selection package is used to split data into training and test sets, typically allocating 25% of data to the test set by default.
 - Stratified Random Sampling: Ensures the distribution of values for a specific column is maintained between the original, training, and test data by using the stratify parameter in the train_test_split function.
 
+**Dimensionality Reduction**
+- Dimensionality Reduction: This process reduces the number of features or dimensions in a dataset, which helps in reducing processing time, storage requirements, and improving model interpretability.
+- Curse of Dimensionality: Increasing the number of features in a dataset without a corresponding increase in data instances can degrade model performance. Dimensionality reduction helps mitigate this issue.
+
+Approaches: 
+- There are two common approaches:
+ - Feature Selection: Identifies a minimal set of features that result in model performance close to that obtained using all features.
+ - Feature Extraction: Uses mathematical transformations to create new features that are projections of the original ones, though these new features may be less interpretable.
+
+
 ### Modelling
 
 
