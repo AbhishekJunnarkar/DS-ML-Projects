@@ -4,7 +4,7 @@
 
 - Deep Feedforward Neural Nets
 
-- Convonutional Neural Nets
+- Convolutional Neural Nets
 
 - Long short-Term Memory (LSTM) networks
 
