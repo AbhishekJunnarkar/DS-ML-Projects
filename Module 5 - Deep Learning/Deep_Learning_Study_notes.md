@@ -71,7 +71,7 @@ Uses powerful GPUs to process large neural networks
 
 --- 
 
-### Perceptron
+## Smallest building block: Perceptron
 
 A perceptron is the simplest type of neural network — think of it as a basic decision-making unit in a neural network.
 
@@ -81,14 +81,13 @@ Let’s say we have inputs: x1, x2, x3
 
 Each input has a weight: w1, w2, w3
 
-The perceptron computes:
-
+#### The perceptron computes:
 
 output = activation(w1*x1 + w2*x2 + w3*x3 + bias)
 
 The activation function (usually a step function or sign function) decides if the neuron "fires" (gives 1) or not (gives 0).
 
-Analogy:
+##### Analogy:
 
 Imagine you’re deciding whether to go out:
 
@@ -100,18 +99,18 @@ Input 3: Is your friend free? (Yes=1, No=0)
 
 You assign importance (weights) to each factor, add them up, and if the result is high enough (threshold), you decide “Yes, go out” — that’s what a perceptron does.
 
-Key Points:
+##### Key Points:
 - One layer, one output
 - Used for binary classification (e.g., yes/no, spam/not spam)
 - Learns by adjusting weights (using a simple learning rule)
 
-Limitations:
+##### Limitations:
 - Can only solve linearly separable problems (e.g., it cannot solve the XOR problem)
 
 - That’s why we move to multi-layer perceptrons (MLPs) for more complex tasks.
 
 --- 
-### Feed Forward (FF)
+## Feed Forward (FF) Neural Network
 
 Q. What is Feedforward (FF) in Neural Networks?
 
@@ -299,12 +298,25 @@ It is typically used in the output layer of a neural network for multi-class cla
 ---
 
 ### Hyper parameter Tuning
- 
 
 ## Deep Feedforward Neural Nets
 
-## Convonutional Neural Nets
+## Convolutional Neural Nets
 
+## Recurrent Neural Network (RNN)
+
+A Recurrent Neural Network (RNN) is a type of neural network designed for sequence data – like time series, text, or audio.
+
+### Why Use RNNs?
+Traditional neural networks (like feedforward or CNNs) don’t remember past inputs. But RNNs are different – they have memory.
+
+RNNs remember past information using loops, making them suitable for:
+
+Text (sentiment analysis, machine translation)
+
+Time series forecasting (stock prices, weather)
+
+Audio processing (speech recognition)
 ## Long short-Term Memory (LSTM) networks
 
 ## Introduction to Transformers and Attention Mechanisms
