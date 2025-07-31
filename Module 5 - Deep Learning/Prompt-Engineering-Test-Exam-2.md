@@ -235,7 +235,7 @@ Provide me a short summary of the topic, followed by MCQ based questions for pra
 of questions on this topic.
 ---
 
-# 🧠 Perceptron – MCQ Set 1 with Answers & Explanations
+##  Perceptron – MCQ Set 1 with Answers & Explanations
 
 ---
 
@@ -350,7 +350,7 @@ of questions on this topic.
 
 ---
 
-# 🤖 Perceptron – MCQ Set 2 (Advanced) with Answers & Explanations
+## 🤖 Perceptron – MCQ Set 2 (Advanced) with Answers & Explanations
 
 ---
 
@@ -474,6 +474,137 @@ m = samples, n = features → Each sample can require looping over n features �
 
 ---
 ## Multi layer Perceptron
+
+## 🤖 Multi-Layer Perceptron (MLP) – MCQ Set 1 with Answers & Explanations
+
+---
+
+### ✅ 1. Which of the following problems can a multi-layer perceptron solve that a single-layer perceptron cannot?
+
+**A)** Linearly separable problems  
+**B)** Regression problems  
+**C)** XOR problem  
+**D)** Binary classification  
+
+**Correct Answer:** C  
+💡 **Explanation:** The **XOR problem** is not linearly separable, and a single-layer perceptron fails. MLPs with hidden layers can solve it using non-linear transformations.
+
+---
+
+### ✅ 2. What role does the activation function play in hidden layers of an MLP?
+
+**A)** It increases model size  
+**B)** It introduces linearity  
+**C)** It reduces training time  
+**D)** It introduces non-linearity  
+
+**Correct Answer:** D  
+💡 **Explanation:** Activation functions like ReLU, sigmoid, etc., make MLPs capable of learning **non-linear** mappings. Without them, the model is just linear.
+
+---
+
+### ✅ 3. Which activation function is most commonly used in the hidden layers of an MLP?
+
+**A)** Softmax  
+**B)** ReLU  
+**C)** Sigmoid  
+**D)** Step Function  
+
+**Correct Answer:** B  
+💡 **Explanation:** **ReLU (Rectified Linear Unit)** is computationally efficient and avoids the vanishing gradient problem, making it ideal for hidden layers.
+
+---
+
+### ✅ 4. Why is ReLU preferred over sigmoid in hidden layers of MLPs?
+
+**A)** It requires fewer neurons  
+**B)** It prevents overfitting  
+**C)** It avoids vanishing gradients  
+**D)** It computes probabilities  
+
+**Correct Answer:** C  
+💡 **Explanation:** ReLU maintains stronger gradients for large positive inputs, avoiding the vanishing gradient issue found in sigmoid/tanh.
+
+---
+
+### ❌ 5. Which loss function is most appropriate for multi-class classification using MLP?
+
+**A)** Mean Absolute Error  
+**B)** Mean Squared Error  
+**C)** Binary Cross-Entropy  
+**D)** Categorical Cross-Entropy  
+
+**Correct Answer:** D  
+💡 **Explanation:** For multi-class classification with Softmax outputs, use **Categorical Cross-Entropy**.  
+❌ Binary Cross-Entropy is for **2-class problems** only.
+
+---
+
+### ✅ 6. What is the purpose of backpropagation in MLP training?
+
+**A)** Generate new data  
+**B)** Prevent overfitting  
+**C)** Compute gradients for weight updates  
+**D)** Normalize inputs  
+
+**Correct Answer:** C  
+💡 **Explanation:** Backpropagation applies the **chain rule** to calculate gradients for all weights so they can be updated via gradient descent.
+
+---
+
+### ✅ 7. In an MLP with 2 hidden layers, how many sets of weights will exist?
+
+**A)** 1  
+**B)** 2  
+**C)** 3  
+**D)** Depends on neurons, not layers  
+
+**Correct Answer:** C  
+💡 **Explanation:**  
+- Input → Hidden Layer 1  
+- Hidden Layer 1 → Hidden Layer 2  
+- Hidden Layer 2 → Output  
+So, **3 sets of weights** exist.
+
+---
+
+### ✅ 8. What type of learning does an MLP use?
+
+**A)** Unsupervised  
+**B)** Reinforcement  
+**C)** Supervised  
+**D)** Self-supervised  
+
+**Correct Answer:** C  
+💡 **Explanation:** MLPs require **labeled data** during training, hence it is a **supervised learning** method.
+
+---
+
+### ✅ 9. The universal approximation theorem states that:
+
+**A)** MLP can replicate CNNs  
+**B)** A single hidden layer MLP can approximate any continuous function  
+**C)** Only deep networks can solve complex tasks  
+**D)** Perceptrons outperform MLPs  
+
+**Correct Answer:** B  
+💡 **Explanation:** Even a **single hidden layer MLP** (with enough neurons) can approximate any continuous function on compact input spaces.
+
+---
+
+### ❌ 10. Which of the following is *not* a hyperparameter in MLPs?
+
+**A)** Number of hidden layers  
+**B)** Learning rate  
+**C)** Weights  
+**D)** Activation function  
+
+**Correct Answer:** C  
+💡 **Explanation:**  
+- **Weights** are learned during training → not hyperparameters.  
+- Hyperparameters are things you **set before training** (layers, learning rate, activation).
+
+---
 
 ## Multi layer Perceptron - Structure 
 
