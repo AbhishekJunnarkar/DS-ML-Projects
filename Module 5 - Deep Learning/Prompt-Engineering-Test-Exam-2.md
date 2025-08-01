@@ -53,6 +53,9 @@ of questions on this topic.
 **Answer:** C) Minimize the loss by updating weights through gradients  
 **Explanation:** It propagates error backward from output to input, allowing for **efficient weight updates**.
 
+- Back propagation example in simple explanation with mathematical example
+https://www.youtube.com/watch?v=QZ8ieXZVjuE
+
 ---
 
 ### ✅ 8. Which of the following is a common loss function for classification tasks?
@@ -613,6 +616,7 @@ So, **3 sets of weights** exist.
 ### Epoch, Batch and Mini Batch
 
 ### Nodes, Neurons and Weights in each Layer
+
 
 
 ---
