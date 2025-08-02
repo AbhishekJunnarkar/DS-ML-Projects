@@ -654,6 +654,8 @@ In the last exam I scored 16/24. This time i want to score 24/24.
 Provide me MCQ based questions for practice and later solutions separately to cover the full scope
 of questions on this topic.
 
+
+
 ### Nodes, Neurons and Weights in each Layer
 
 I am preparing for the data science and machine learning exam on topic 
@@ -1764,33 +1766,816 @@ of questions on this topic.
 ## Loss Functions - Regression
   - Question on Loss functions (MAE, MSE, and RMSE)
 
+# 📘 Revision – Loss Functions in Regression (MAE, MSE, RMSE)
+
+---
+
+## 🧠 Summary of Key Loss Functions
+
+| Loss Function | Formula | Pros | Cons | Use Case |
+|---------------|---------|------|------|----------|
+| **MAE** (Mean Absolute Error) | \( \frac{1}{n} \sum |y_i - \hat{y}_i| \) | Robust to outliers | Not differentiable at 0 | Use when outliers are not critical |
+| **MSE** (Mean Squared Error) | \( \frac{1}{n} \sum (y_i - \hat{y}_i)^2 \) | Smooth gradients, penalizes large errors | Very sensitive to outliers | Emphasize large error correction |
+| **RMSE** (Root Mean Squared Error) | \( \sqrt{\frac{1}{n} \sum (y_i - \hat{y}_i)^2} \) | Same units as original | Still sensitive to outliers | Interpretability in same scale |
+
+---
+
+## 📗 MCQs with Correct Answers and Explanations
+
+---
+
+### **1. Which loss function penalizes large errors more severely?**
+
+**Options:**  
+A) MAE  
+B) MSE  
+C) RMSE  
+D) Hinge Loss  
+
+✅ **Answer:** B  
+📘 **Explanation:** MSE squares the error → increases penalty for large deviations.
+
+---
+
+### **2. If all errors are small, how will MAE and MSE compare?**
+
+**Options:**  
+A) MAE will be larger  
+B) MSE will be larger  
+C) They will be equal  
+D) RMSE will be zero  
+
+✅ **Answer:** B  
+📘 **Explanation:** Even small errors squared will slightly increase MSE over MAE.
+
+---
+
+### **3. Which loss function is most sensitive to outliers?**
+
+**Options:**  
+A) MAE  
+B) MSE  
+C) Cross Entropy  
+D) Huber Loss  
+
+✅ **Answer:** B  
+📘 **Explanation:** MSE exaggerates the effect of large errors (due to squaring).
+
+---
+
+### **4. What is the RMSE of predictions [3, 5, 2] and ground truth [4, 4, 2]?**
+
+**Options:**  
+A) 0.5  
+B) 1  
+C) √2 ≈ 1.41  
+D) 2  
+
+❌ **Correct Answer:** None of the above  
+📘 **Calculation:**  
+Errors = [-1, +1, 0]  
+Squared = [1, 1, 0]  
+MSE = (1 + 1 + 0) / 3 = 0.6667  
+RMSE = √0.6667 ≈ **0.8165**
+
+---
+
+### **5. What is the main reason to prefer MAE over MSE?**
+
+**Options:**  
+A) MAE is faster to compute  
+B) MAE handles categorical data  
+C) MAE is less sensitive to outliers  
+D) MAE always has smaller values  
+
+✅ **Answer:** C  
+📘 **Explanation:** MAE is **less sensitive** to outliers than MSE.
+
+---
+
+### **6. What’s the difference between RMSE and MSE?**
+
+**Options:**  
+A) RMSE divides instead of squares  
+B) RMSE uses absolute values  
+C) RMSE is the square root of MSE  
+D) There’s no difference  
+
+✅ **Answer:** C  
+📘 **Explanation:** RMSE = √(MSE), helps in interpretability in original units.
+
+---
+
+### **7. MSE is most appropriate when:**
+
+**Options:**  
+A) You want to ignore large errors  
+B) You want to heavily penalize large errors  
+C) You want to apply classification  
+D) The target is categorical  
+
+✅ **Answer:** B  
+📘 **Explanation:** MSE is best when **emphasizing large error correction**.
+
+---
+
+### **8. If one prediction is 1000 and the true value is 10, which function will penalize it most?**
+
+**Options:**  
+A) MAE  
+B) RMSE  
+C) MSE  
+D) L1 Loss  
+
+✅ **Answer:** C  
+📘 **Explanation:** **MSE**: error² = (990)² = **980100** — massive penalty.
+
+---
+
+## ✅ Score: 7 / 8  
+🟡 **To Review:**  
+- Understand RMSE computation (numerical)  
+- When to prefer MAE over MSE
+
+---
+
+
 ## Loss function - Classification
 - Cross Entropy
 
+# 📘 Revision: Cross-Entropy Loss – Classification
+
+---
+
+## 🧠 Summary
+
+### 🔹 Binary Cross-Entropy (Log Loss)
+\[
+\text{Loss} = -\left[y \cdot \log(\hat{y}) + (1 - y) \cdot \log(1 - \hat{y})\right]
+\]
+- Used in binary classification
+- Requires **Sigmoid** activation for predicted probability
+
+### 🔹 Categorical Cross-Entropy
+\[
+\text{Loss} = -\sum y_i \cdot \log(\hat{y}_i)
+\]
+- Used for multi-class classification
+- Requires **Softmax** to convert logits into a probability distribution
+
+---
+
+## ✅ MCQs with Correct Answers and Explanations
+
+---
+
+### **1. Cross-entropy loss is mainly used in which type of tasks?**
+
+**Options:**  
+A) Regression  
+B) Binary classification  
+C) Clustering  
+D) Dimensionality reduction  
+
+✅ **Answer:** B  
+📘 **Explanation:** Binary cross-entropy is widely used for **classification tasks**.
+
+---
+
+### **2. Which activation function is typically used before applying binary cross-entropy loss?**
+
+**Options:**  
+A) Tanh  
+B) ReLU  
+C) Sigmoid  
+D) Softmax  
+
+✅ **Answer:** C  
+📘 **Explanation:** **Sigmoid** converts model outputs to probabilities for binary classification.
+
+---
+
+### **3. What happens to cross-entropy loss when predicted probability is close to the true label?**
+
+**Options:**  
+A) Loss increases  
+B) Loss becomes zero  
+C) Loss is constant  
+D) Loss is undefined  
+
+✅ **Answer:** B  
+📘 **Explanation:** If prediction matches label (e.g., 1 vs 0.999), the **loss is minimal** (approaches zero).
+
+---
+
+### **4. What will be the binary cross-entropy loss if the predicted probability is 0.99 and true label is 1?**
+
+**Options:**  
+A) High  
+B) Low  
+C) Infinite  
+D) Zero  
+
+✅ **Answer:** B  
+📘 **Explanation:** Prediction is close to the true value → loss is **low but not zero**.
+
+---
+
+### **5. In multi-class classification, which function is paired with categorical cross-entropy?**
+
+**Options:**  
+A) Sigmoid  
+B) ReLU  
+C) Softmax  
+D) Linear  
+
+✅ **Answer:** C  
+📘 **Explanation:** **Softmax** normalizes outputs into a probability distribution.
+
+---
+
+### **6. Which of the following best describes cross-entropy loss?**
+
+**Options:**  
+A) Distance between vectors  
+B) Measure of variance  
+C) Measure of dissimilarity between probability distributions  
+D) Margin-based loss  
+
+✅ **Answer:** C  
+📘 **Explanation:** Cross-entropy measures **how different** two probability distributions are.
+
+---
+
+### **7. When using cross-entropy loss, predictions should be:**
+
+**Options:**  
+A) Raw scores  
+B) One-hot vectors  
+C) Probabilities  
+D) Labels only  
+
+✅ **Answer:** C  
+📘 **Explanation:** Model should output **probabilities**, not hard labels.
+
+---
+
+### **8. Cross-entropy loss is undefined when:**
+
+**Options:**  
+A) Predictions are 1  
+B) Predictions are 0  
+C) Log(0) occurs  
+D) Predictions are correct  
+
+✅ **Answer:** C  
+📘 **Explanation:** **Log(0)** is undefined, causing numerical errors.
+
+---
+
+### **9. For binary classification with cross-entropy, what is the ideal predicted value for y = 0?**
+
+**Options:**  
+A) 1  
+B) 0.5  
+C) 0  
+D) Any number  
+
+✅ **Answer:** C  
+📘 **Explanation:** Ideal prediction for true label 0 is **probability = 0**.
+
+---
+
+### **10. Which loss is most appropriate for multi-class classification with mutually exclusive classes?**
+
+**Options:**  
+A) MSE  
+B) Hinge Loss  
+C) Categorical Cross-Entropy  
+D) Binary Cross-Entropy  
+
+✅ **Answer:** C  
+📘 **Explanation:** **Categorical cross-entropy** works with **Softmax** for multi-class classification.
+
+---
+
+## ✅ Final Score: 8 / 10  
+- 🔁 **To Review:**  
+  - Q4: Predicted 0.99 vs True 1 ≠ zero loss  
+  - Q7: Model outputs should be **probabilities**, not one-hot vectors
+
+---
+
+
 ## Hyperparameter Tuning
 
-## Shallow Learning Model
+# 📘 Hyperparameter Tuning – Revision Notes & MCQs
 
-## Deep Learning Model
+---
+
+## 🔹 What Are Hyperparameters?
+
+- Configuration values set **before training** the model.
+- Not learned from data like weights or biases.
+- Examples:
+  - Learning rate
+  - Number of layers/neurons
+  - Batch size
+  - Epochs
+  - Dropout rate
+  - Regularization (e.g., alpha in Ridge)
+
+---
+
+## 🔹 Popular Hyperparameter Tuning Methods
+
+| Method                | Description |
+|----------------------|-------------|
+| **Grid Search**       | Exhaustively tries all parameter combinations |
+| **Random Search**     | Randomly samples from parameter grid |
+| **Bayesian Optimization** | Uses previous results to predict next best configuration |
+| **Manual Tuning**     | Trial-and-error based on experience |
+| **Tools**: `GridSearchCV`, `RandomizedSearchCV`, Optuna, Ray Tune |
+
+---
+
+## ✅ MCQs with Correct Answers and Explanations
+
+---
+
+### **1. Which of the following is a hyperparameter?**  
+**Options:** A) Weight of a neuron B) Loss value C) Learning rate D) Training accuracy  
+✅ **Answer:** C  
+📘 **Explanation:** Learning rate is a hyperparameter set before training.
+
+---
+
+### **2. Which method searches exhaustively through all combinations?**  
+**Options:** A) Random Search B) Bayesian Optimization C) Grid Search D) Evolutionary Algorithm  
+✅ **Answer:** C  
+📘 **Explanation:** Grid Search evaluates every parameter combination.
+
+---
+
+### **3. What is a major drawback of Grid Search?**  
+**Options:** A) It’s random B) Can’t tune multiple parameters C) Computationally expensive D) Only works on classification  
+✅ **Answer:** C  
+📘 **Explanation:** Grid search is slow when tuning many parameters.
+
+---
+
+### **4. What is the main advantage of Random Search over Grid Search?**  
+**Options:** A) Better accuracy always B) Works on small datasets C) Finds global minimum D) Faster and still effective  
+✅ **Answer:** D  
+📘 **Explanation:** Random search is faster and nearly as effective in practice.
+
+---
+
+### **5. Which library provides GridSearchCV?**  
+**Options:** A) NumPy B) Matplotlib C) scikit-learn D) TensorFlow  
+✅ **Answer:** C  
+📘 **Explanation:** GridSearchCV is a tuning function from `sklearn`.
+
+---
+
+### **6. Bayesian optimization differs from grid/random search because it:**  
+**Options:** A) Uses dropout B) Chooses all combinations C) Uses previous results to guide next trial D) Ignores loss values  
+✅ **Answer:** C  
+📘 **Explanation:** Bayesian optimization is smart – learns from previous evaluations.
+
+---
+
+### **7. What is the main objective of hyperparameter tuning?**  
+**Options:** A) Reduce training data B) Find best model weights C) Maximize test error D) Improve model performance  
+✅ **Answer:** D  
+📘 **Explanation:** Tuning aims to get the **best validation/test accuracy**.
+
+---
+
+### **8. Which of the following is *not* a hyperparameter?**  
+**Options:** A) Number of layers B) Epochs C) Regularization D) Model weights  
+✅ **Answer:** D  
+📘 **Explanation:** Weights are **learned parameters**, not hyperparameters.
+
+---
+
+### **9. Early stopping can be considered a:**  
+**Options:** A) Loss function B) Feature selection method C) Hyperparameter tuning strategy D) Kernel trick  
+✅ **Answer:** C  
+📘 **Explanation:** Early stopping is a tuning strategy to avoid overfitting.
+
+---
+
+### **10. In Random Search, what is randomly selected?**  
+**Options:** A) Data samples B) Evaluation metric C) Hyperparameter combinations D) Model type  
+✅ **Answer:** C  
+📘 **Explanation:** Random search picks hyperparameter sets at random.
+
+---
+
+## ✅ Final Score: 8 / 10  
+🔁 **Review Q2 and Q10 for perfect clarity.**
+
+---
+
+
+## Shallow Learning Model vs. Deep Learning Model
+
+# 🤖 Shallow Learning vs Deep Learning – MCQs + Revision
+
+---
+
+## 📘 Summary
+
+| Aspect                | Shallow Learning                         | Deep Learning                              |
+|-----------------------|------------------------------------------|---------------------------------------------|
+| **Layers**            | 1 or 2                                   | Many hidden layers (deep)                  |
+| **Feature Engineering** | Manual                                  | Automatic (via layers)                      |
+| **Examples**          | Logistic Regression, SVM, k-NN, Decision Trees | CNN, RNN, DNN, Transformers       |
+| **Data Requirement**  | Low to moderate                          | High — needs large labeled data            |
+| **Interpretability**  | High                                     | Low (black-box nature)                     |
+| **Training Speed**    | Faster                                   | Slower                                     |
+| **Application**       | Tabular data, simple tasks               | Image, audio, text, complex tasks          |
+| **Computational Need**| Low — runs on CPU                        | High — usually needs GPU                   |
+
+---
+
+## ✅ MCQs with Answers and Explanations
+
+---
+
+### **1. Which of the following is a shallow learning algorithm?**  
+**Options:** A) CNN B) SVM C) RNN D) Transformer  
+✅ **Answer:** B  
+📘 **Explanation:** SVM is a classical shallow learning algorithm.
+
+---
+
+### **2. What is a major difference between shallow and deep learning?**  
+**Options:** A) Shallow needs more data B) Deep uses fewer parameters  
+C) Shallow models rely on manual feature extraction D) Deep models are easier to interpret  
+✅ **Answer:** C  
+📘 **Explanation:** Shallow learning often requires hand-crafted features.
+
+---
+
+### **3. Which model is best for structured tabular data?**  
+**Options:** A) DNN B) CNN C) Logistic Regression D) RNN  
+✅ **Answer:** C  
+📘 **Explanation:** Logistic Regression performs well on structured/tabular datasets.
+
+---
+
+### **4. Which is NOT a deep learning model?**  
+**Options:** A) Decision Tree B) CNN C) RNN D) Transformer  
+✅ **Answer:** A  
+📘 **Explanation:** Decision Trees are shallow, not deep.
+
+---
+
+### **5. Which model is faster to train on small datasets?**  
+**Options:** A) Deep Learning B) Shallow Learning C) Both same D) None  
+✅ **Answer:** B  
+📘 **Explanation:** Shallow models train quickly and are ideal for small data.
+
+---
+
+### **6. Deep learning models require:**  
+**Options:** A) Small datasets B) Minimal compute  
+C) High interpretability D) Large labeled datasets  
+✅ **Answer:** D  
+📘 **Explanation:** Deep learning thrives with massive labeled datasets.
+
+---
+
+### **7. Which model does automatic feature extraction?**  
+**Options:** A) k-NN B) SVM C) DNN D) Linear Regression  
+✅ **Answer:** C  
+📘 **Explanation:** Deep Neural Networks learn features from raw input automatically.
+
+---
+
+### **8. Deep learning clearly outperforms shallow learning in:**  
+**Options:** A) Credit scoring B) Spam filtering C) Image recognition D) Linear regression  
+✅ **Answer:** C  
+📘 **Explanation:** For images and unstructured data, deep models are superior.
+
+---
+
+### **9. One downside of deep learning is:**  
+**Options:** A) Higher interpretability B) Less data needed  
+C) Harder to train and interpret D) No hidden layers  
+✅ **Answer:** C  
+📘 **Explanation:** Deep models are computationally and interpretively complex.
+
+---
+
+### **10. Which is true about shallow learning?**  
+**Options:** A) Needs GPU B) Best for unstructured data  
+C) Good for low-data environments D) Uses many hidden layers  
+✅ **Answer:** C  
+📘 **Explanation:** Shallow models work well when data is limited.
+
+---
+
+## ✅ Final Score: 10 / 10  
+🎯 You’ve mastered this topic! Consider reviewing:  
+- CNNs vs DNNs  
+- Transfer learning  
+- Bias-variance tradeoff in deep models  
+
+---
+
 
 ## Back Propagation
 
+# 🔄 Backpropagation – Deep Learning Revision
 
-## Back Propagation - Training multilayer perceptrons
+---
 
-## Boston Dataset Example
+## 📘 What is Backpropagation?
+
+Backpropagation is the **core algorithm** used to train neural networks. It calculates how the weights should be updated to reduce error using **gradient descent**.
+
+---
+
+## 🧠 Key Concepts
+
+- **Forward Pass:** Compute predictions with current weights.
+- **Loss Function:** Quantify the difference between prediction and target.
+- **Backward Pass:** Use **chain rule** to compute gradients of the loss.
+- **Weight Update Rule:**  
+  \[
+  w = w - \eta \cdot \frac{\partial L}{\partial w}
+  \]  
+  - \( \eta \): Learning rate  
+  - \( \frac{\partial L}{\partial w} \): Gradient of loss w.r.t. weights
+
+---
+
+## ❗ Common Issues
+
+- **Vanishing Gradient:** Gradients become too small → slow learning (e.g., sigmoid)
+- **Exploding Gradient:** Gradients become too large → unstable updates
+- **Solutions:** Use **ReLU**, **batch normalization**, **gradient clipping**
+
+---
+
+## ✅ MCQs with Answers and Explanations
+
+---
+
+### **1. What is the main purpose of backpropagation in neural networks?**  
+**Options:**  
+A) Increase accuracy  
+B) Reduce the model size  
+C) Compute gradients to update weights  
+D) Select activation function  
+✅ **Answer:** C  
+📘 **Explanation:** It calculates gradients of the loss to update weights.
+
+---
+
+### **2. Backpropagation is based on which mathematical concept?**  
+**Options:**  
+A) Linear algebra  
+B) Chain rule of derivatives  
+C) Matrix inversion  
+D) Lagrange multipliers  
+✅ **Answer:** B  
+📘 **Explanation:** Chain rule allows gradient flow through multiple layers.
+
+---
+
+### **3. Which of the following is updated during backpropagation?**  
+**Options:**  
+A) Input features  
+B) Activation functions  
+C) Weights and biases  
+D) Number of layers  
+✅ **Answer:** C  
+📘 **Explanation:** Only weights and biases are adjusted during training.
+
+---
+
+### **4. In backpropagation, the error is propagated:**  
+**Options:**  
+A) Forward from input to output  
+B) Backward from output to input  
+C) Only in output layer  
+D) Randomly across layers  
+✅ **Answer:** B  
+📘 **Explanation:** It flows backward to compute partial derivatives layer by layer.
+
+---
+
+### **5. Which function causes vanishing gradients most often?**  
+**Options:**  
+A) ReLU  
+B) Sigmoid  
+C) Softmax  
+D) Linear  
+✅ **Answer:** B  
+📘 **Explanation:** Sigmoid outputs very small gradients for large input magnitudes.
+
+---
+
+### **6. Which of the following is true about the learning rate in backpropagation?**  
+**Options:**  
+A) Higher is always better  
+B) Controls step size of weight updates  
+C) It doesn't affect convergence  
+D) Only used in output layer  
+✅ **Answer:** B  
+📘 **Explanation:** It defines how big a step we take in the weight update direction.
+
+---
+
+### **7. Which of the following reduces vanishing gradient issues?**  
+**Options:**  
+A) Sigmoid activation  
+B) Tanh activation  
+C) ReLU activation  
+D) High learning rate  
+✅ **Answer:** C  
+📘 **Explanation:** ReLU avoids gradient shrinkage for positive inputs.
+
+---
+
+### **8. During backpropagation, gradients are used to:**  
+**Options:**  
+A) Reset weights  
+B) Visualize the network  
+C) Update weights in the opposite direction of error  
+D) Increase output probability  
+✅ **Answer:** C  
+📘 **Explanation:** Gradient descent moves weights **against** the gradient to reduce error.
+
+---
+
+### **9. Backpropagation stops when:**  
+**Options:**  
+A) Model crashes  
+B) Loss function increases  
+C) Gradient becomes negative  
+D) Convergence or early stopping criteria is met  
+✅ **Answer:** D  
+📘 **Explanation:** Training halts when loss converges or early stopping conditions are met.
+
+---
+
+### **10. What helps backpropagation to efficiently train deep networks?**  
+**Options:**  
+A) Constant weights  
+B) Chain rule  
+C) Random updates  
+D) Low input variance  
+✅ **Answer:** B  
+📘 **Explanation:** Chain rule links partial derivatives layer by layer.
+
+---
+
+## ✅ Final Score: 10 / 10  
+🎯 You’ve mastered backpropagation! You're fully exam-ready on this topic.
+
+---
 
 ### Random state
 
+What is random_state?
+random_state is a seed value used to control the randomness of an algorithm — to make the results reproducible.
+
+🧠 Why It Matters
+Many ML functions involve randomness, such as:
+
+Splitting data (train_test_split)
+
+Initializing model weights
+
+Shuffling data in cross-validation
+
+Creating random forests or decision trees
+
+By setting random_state, you fix the randomness, so you get the same result every time you run the code.
+
+```
+from sklearn.model_selection import train_test_split
+
+X_train, X_test, y_train, y_test = train_test_split(
+    X, y, test_size=0.2, random_state=42
+)
+```
+Every time you run this with **random_state=42**, you get exactly the same train/test split.
+
+If you don't set it, results will vary each time you run the code.
+
 ## Deep Learning Libraries
 
-### Karas
-
-### Karas with Tensorflow
-
-### Pytorch
+# 🤖 Deep Learning Libraries – Revision Notes
 
 ---
+
+## 📘 Overview
+
+Deep learning libraries provide the tools and building blocks to design, train, and deploy neural networks efficiently.
+
+---
+
+## 🔹 1. TensorFlow
+
+- **Developer:** Google Brain  
+- **Language:** Python (core in C++)  
+- **High-level API:** `tf.keras`  
+- **Strengths:**  
+  - Production-ready and scalable  
+  - Supports GPU/TPU  
+  - Mobile and embedded deployment  
+- **Use Cases:**  
+  - Image classification  
+  - NLP  
+  - Speech recognition  
+
+---
+
+## 🔹 2. PyTorch
+
+- **Developer:** Facebook AI Research  
+- **Language:** Python (core in C++)  
+- **Key Features:**  
+  - Dynamic computation graph  
+  - Easy debugging  
+  - Flexible for research  
+- **Use Cases:**  
+  - Computer vision  
+  - NLP  
+  - Reinforcement learning  
+
+---
+
+## 🔹 3. Keras
+
+- **Now part of TensorFlow as:** `tf.keras`  
+- **Strengths:**  
+  - Simple and user-friendly  
+  - Best for beginners  
+- **Use Cases:**  
+  - Quick prototyping  
+  - Educational projects  
+  - Shallow-to-moderate networks  
+
+---
+
+## 🔹 4. MXNet
+
+- **Developer:** Apache  
+- **Supported by:** Amazon (AWS SageMaker)  
+- **Strengths:**  
+  - Scalable to multi-GPU and cloud environments  
+  - Good for large-scale training  
+
+---
+
+## 🔹 5. JAX
+
+- **Developer:** Google  
+- **Strengths:**  
+  - Combines NumPy with AutoDiff  
+  - Fast performance  
+- **Use Cases:**  
+  - Scientific computing  
+  - Experimental deep learning research  
+
+---
+
+## 🔹 6. CNTK (Microsoft Cognitive Toolkit)
+
+- **Developer:** Microsoft  
+- **Note:** Not widely used today  
+- **Good for:** RNNs and speech-related models  
+
+---
+
+## 📊 Quick Comparison Table
+
+| Library    | Best For              | Backend     | Key Strength         |
+|------------|-----------------------|-------------|----------------------|
+| TensorFlow | Production, deployment| C++ / Python| Scalability          |
+| PyTorch    | Research, flexibility | C++ / Python| Pythonic, dynamic    |
+| Keras      | Beginners             | TensorFlow  | Simplicity           |
+| MXNet      | Cloud apps (AWS)      | C++         | Parallel training    |
+| JAX        | Speed + AutoDiff      | Python      | Scientific research  |
+
+---
+
+## 🧭 When to Use What?
+
+| Goal                                  | Recommended Library |
+|---------------------------------------|---------------------|
+| Quick prototyping                     | Keras, PyTorch      |
+| Large production deployment           | TensorFlow          |
+| Research/experimentation              | PyTorch, JAX        |
+| Working with AWS Cloud                | MXNet               |
+
 ---
 
 # S22: Deep Learning
@@ -1808,27 +2593,10 @@ of questions on this topic.
 ---
 ---
 
-
-### Loss Functions - Classification MCQ questions
-
-
-### Hyperparameter Tuning
-
-
-### Back propagation 
-
-
 ### Confusion matrix and Precision, accuracy and recall
 
 
-  - Question on Back-propogation: training multilayer perceptrons
-  - Dropout can be a exam question
-  - Array of sigmoid - softmax will be a question in exam.
-
-  - Multi Layer perceptron and its structure
-  - Epoch, batch and mini batch
-
-   - LSTM (Long short Term Memory Neural Network) 
+## LSTM (Long short Term Memory Neural Network) 
 
 
 # Topics that can have numerical questions asked:
