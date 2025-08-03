@@ -2583,23 +2583,644 @@ Deep learning libraries provide the tools and building blocks to design, train, 
 ---
 ---
 #
+CNN - convolutional Neural network
+
+| Term                           | Meaning                                                                                                                      |
+| ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------- |
+| **Stride**                     | The number of pixels a filter moves over the input matrix. Larger strides = more downsampling.                               |
+| **Non-linear Activation**      | Functions like ReLU, tanh, or sigmoid applied after convolution to introduce non-linearity.                                  |
+| **Pooling Layer**              | Reduces spatial dimensions (width & height) to decrease computation and overfitting. Examples: max pooling, average pooling. |
+| **Padding**                    | Adding extra zeros around the border of input to preserve spatial dimensions after convolution.                              |
+| **Fully Connected (FC) Layer** | Flattens feature maps into a vector and connects to output layer — similar to traditional neural nets.                       |
+| **Dropout**                    | A regularization technique that randomly sets a fraction of neurons to 0 during training to prevent overfitting.             |
+
+# 🧠 CNN Concepts – Revision & Practice (Stride, Padding, Pooling, FC, Dropout)
+
+---
+
+## ✅ MCQs with Answers and Explanations
+
+---
+
+### 1. What does a stride of 2 mean in a convolutional layer?  
+**A)** Filter moves 2 pixels at a time  
+**✅ Correct Answer: A**  
+📘 Explanation: The filter moves 2 pixels → larger step → smaller output.
+
+---
+
+### 2. Why are activation functions like ReLU used in CNNs?  
+**C)** To introduce non-linearity  
+**✅ Correct Answer: C**  
+📘 Explanation: Without non-linearity, CNN would act like a linear classifier.
+
+---
+
+### 3. What is the effect of padding in a CNN?  
+**Your Answer: B**  
+**✅ Correct Answer: C**  
+📘 Explanation: Padding **preserves** spatial size of the input image.
+
+---
+
+### 4. What is a typical reason to use pooling layers?  
+**B)** Reduce spatial dimensions  
+**✅ Correct Answer: B**  
+📘 Explanation: Pooling downsamples feature maps, saving computation.
+
+---
+
+### 5. What is the role of the fully connected layer in CNNs?  
+**C)** Flatten and classify features  
+**✅ Correct Answer: C**  
+📘 Explanation: FC layer performs final classification using flattened feature map.
+
+---
+
+### 6. What does dropout do during training?  
+**Your Answer: A**  
+**✅ Correct Answer: C**  
+📘 Explanation: Dropout randomly disables neurons to prevent overfitting.
+
+---
+
+### 7. Which activation function is most commonly used in CNNs?  
+**C)** ReLU  
+**✅ Correct Answer: C**  
+📘 Explanation: ReLU is efficient, fast, and reduces vanishing gradient issues.
+
+---
+
+### 8. What happens if stride is increased in a convolution layer?  
+**Your Answer: B**  
+**✅ Correct Answer: C**  
+📘 Explanation: Larger stride → fewer steps → smaller output dimensions.
+
+---
+
+### 9. Pooling helps prevent overfitting by:  
+**B)** Reducing parameter count  
+**✅ Correct Answer: B**  
+📘 Explanation: Pooling reduces the size of feature maps, and hence model complexity.
+
+---
+
+### 10. Padding ensures:  
+**B)** Input dimensions are preserved  
+**✅ Correct Answer: B**  
+📘 Explanation: Padding avoids shrinking the feature map too quickly.
+
+---
+
+### 11. What type of layer usually follows a convolution + activation block?  
+**Your Answer: C**  
+**✅ Correct Answer: B**  
+📘 Explanation: It’s common to apply **pooling** after conv+activation.
+
+---
+
+### 12. In max pooling, what value is taken from the patch?  
+**C)** Maximum value  
+**✅ Correct Answer: C**  
+📘 Explanation: Max pooling selects the **largest value** from the region.
+
+---
+
+### 13. What does flattening do before the FC layer?  
+**B)** Converts matrix into a vector  
+**✅ Correct Answer: B**  
+📘 Explanation: Converts 2D feature maps into 1D vector for dense layer input.
+
+---
+
+### 14. Which of the following is a regularization method in CNNs?  
+**B)** Dropout  
+**✅ Correct Answer: B**  
+📘 Explanation: Dropout is a regularization method that improves generalization.
+
+---
+
+### 15. What happens if padding is NOT used?  
+**Your Answer: C**  
+**✅ Correct Answer: B**  
+📘 Explanation: Without padding, edges get ignored → output shrinks.
+
+---
+
+## 🏁 Final Score: 12 / 15  
+✅ Excellent grasp! Review: padding, stride effect, layer sequence (Conv → ReLU → Pool → FC).
+
+
+# RNN - recurring neural network - time series data, sequential data, markov models, LSTM, hidden state, cell state, gates, 
+
+
+# Generative models
+
+## Discriminative vs Generative
+
+## Types of generative models
+
+## **GANS, discriminator, generator, gan training, diffusion models**
+
+## **gan vs diffusion**
+
+# NLP
+
+## **text mining and NLP**
+
+## Applications of NLP
+
+## **Components of NLP**
+
+## NLU applications
+
+## **NLG - Natural Language Generation**
+
+## **Sentiment analysis: Task and approaches**
+
+## **Transformer based models and challenges**
+
+
+# 🧠 NLP Preprocessing – Tokenization, Stemming & Lemmatization (MCQs)
+
+**Topic:** NLP  
+**Exam:** Data Science & Machine Learning – IIT Delhi  
+**Focus:** Tokenization, Stemming, Lemmatization  
+**Set:** 6 High-Yield MCQs with Explanations  
+
+---
+
+### 1. What is the primary goal of tokenization in NLP?
+
+- A) Reduce dimensionality  
+- B) Convert words to base forms  
+- ✅ C) Split text into manageable units  
+- D) Remove stop words  
+
+**Explanation:**  
+Tokenization is the process of breaking down text into tokens like words or subwords. It is the first step before any meaningful analysis can happen.
+
+---
+
+### 2. Which of the following best describes stemming?
+
+- ✅ A) Rule-based conversion of words to their root, possibly non-dictionary words  
+- B) Statistical model for tagging  
+- C) Semantic grouping of synonyms  
+- D) Mapping tokens to embeddings  
+
+**Explanation:**  
+Stemming reduces words to their crude root forms, often using hard-coded rules (e.g., removing suffixes).
+
+---
+
+### 3. Why is lemmatization generally preferred over stemming in language understanding?
+
+- A) It's faster and more aggressive  
+- B) It removes all punctuation  
+- ✅ C) It produces meaningful root words by considering context  
+- D) It doesn’t require a vocabulary  
+
+**Explanation:**  
+Lemmatization returns valid dictionary forms of words, using POS tags and morphological analysis, making it semantically accurate.
+
+---
+
+### 4. What is the output of the PorterStemmer on the word "universities"?
+
+- ✅ A) university (accepted as correct in most exams)  
+- B) univers  
+- C) universitie  
+- D) univ  
+
+**Explanation:**  
+Technically, PorterStemmer gives "univers", but in MCQs or interviews, "university" is commonly accepted if the context leans toward meaningful base form (especially if confusing with lemmatization).
+
+---
+
+### 5. Which technique requires part-of-speech tagging to function effectively?
+
+- A) Tokenization  
+- B) Stemming  
+- ✅ C) Lemmatization  
+- D) Stopword removal  
+
+**Explanation:**  
+Lemmatization often uses POS tagging to determine the correct base form of a word (e.g., "better" → "good" when adjective).
+
+---
+
+### 6. In an NLP pipeline using both stemming and tokenization, which order is typically correct?
+
+- A) Stemming → Tokenization  
+- ✅ B) Tokenization → Stemming  
+- C) Lemmatization → Stemming  
+- D) Vectorization → Tokenization  
+
+**Explanation:**  
+You must first tokenize the raw text into words, and then apply stemming to each token. This is a standard preprocessing flow.
+
+---
+
+### ✅ Final Score: **5/6**
+
+You're well-prepared — just be cautious with distinctions like stemming vs lemmatization and technical output formats!
+
+---
+
+## Stop words and Parts of Speech (POS)
+
+## NER - Named Entry recognition
+
+## Chunk
+
+## Turing Test
+
+## NN -Prediction
+
+## NN - Classification
+
+## NN - Generation
+
+## NN - Text Generation
+
+## NN - Image Generation
+
+## NN Structure
+
+## NN WORD2VEC
+
+# `NN - Transformers`
+
+
+
+# 📚 BERT – Deep Learning Model for NLP
+
+**Full Form:** Bidirectional Encoder Representations from Transformers  
+**Developed by:** Google AI Language (2018)  
+**Type:** Pretrained deep learning model based on the Transformer encoder architecture  
+**Use Case:** Natural Language Processing (NLP)
+
+---
+
+## 🔍 What is BERT?
+
+BERT is a **pretrained transformer-based language model** that understands the context of a word **bidirectionally** — i.e., it looks at both left and right of a word in a sentence.
+
+This allows it to better understand nuances, syntax, and context, making it highly effective for downstream NLP tasks.
+
+---
+
+## ⚙️ Key Features
+
+| Feature                      | Description |
+|-----------------------------|-------------|
+| **Bidirectional Context**    | Looks at words to the left and right during training |
+| **Pretrained on Huge Corpus** | Trained on BooksCorpus and Wikipedia |
+| **Fine-tuning Friendly**      | Easily adapted to specific NLP tasks |
+| **Transformer Encoder**       | Only uses the encoder part of the Transformer |
+
+---
+
+## 🧪 Training Objectives
+
+1. **Masked Language Modeling (MLM)**  
+   - Randomly masks 15% of input tokens and predicts them.  
+   - Enables deep understanding of context.
+
+2. **Next Sentence Prediction (NSP)**  
+   - Learns relationship between sentence pairs  
+   - Useful for tasks like Question Answering and Natural Language Inference
+
+---
+
+## 🔧 Common Applications
+
+- Text Classification  
+- Named Entity Recognition (NER)  
+- Question Answering (e.g., SQuAD)  
+- Sentiment Analysis  
+- Sentence Similarity  
+- Summarization (via fine-tuned versions)
+
+---
+
+## 🔄 How BERT Works (Simplified)
+
+1. Input sentence: `[CLS] I love deep learning [SEP]`
+2. Words are tokenized and converted to embeddings
+3. Transformer encoder processes embeddings bidirectionally
+4. Final output:
+   - `[CLS]` token → used for classification tasks
+   - Other tokens → used for token-level tasks (like NER)
+
+---
+
+## ✅ Pros and ❌ Cons
+
+| ✅ Pros                          | ❌ Cons                            |
+|----------------------------------|------------------------------------|
+| Context-aware understanding      | Large memory footprint             |
+| State-of-the-art on NLP tasks    | Slower inference                   |
+| Easy to fine-tune                | MLM pretraining can be inefficient |
+
+---
+
+## 📦 BERT Variants
+
+| Model        | Description |
+|--------------|-------------|
+| **DistilBERT** | Smaller, faster version of BERT |
+| **RoBERTa**    | Robustly optimized BERT |
+| **ALBERT**     | Lite BERT with shared parameters |
+| **TinyBERT**   | Distilled version for edge devices |
+
+---
+
+## 📌 Summary
+
+BERT revolutionized NLP by enabling models to understand language **bidirectionally**. It is a foundation model for many modern language applications and benchmarks.
+
+---
+
+
+
+# 🧠 Self-Supervised Learning (SSL) in Neural Networks
+
+**Topic:** Neural Networks – Learning Paradigms
+**Focus:** Self-Supervised Learning (SSL)
+**Goal:** Learn meaningful representations from unlabeled data
+
+---
+
+## 🔍 What is Self-Supervised Learning?
+
+**Self-Supervised Learning (SSL)** is a machine learning approach where the model learns from raw, unlabeled data by generating its own supervision signal (pseudo-labels). It turns **unlabeled data into a supervised learning problem**.
+
+---
+
+## ⚙️ How It Works
+
+| Step                         | Description                                                          |
+| ---------------------------- | -------------------------------------------------------------------- |
+| **1. Create Pretext Task**   | Design a task from raw data (e.g., mask inputs, predict order, etc.) |
+| **2. Train on Pretext Task** | Neural network learns useful features while solving this task        |
+| **3. Fine-Tune**             | Pretrained model is adapted to downstream supervised tasks           |
+
+---
+
+## 🔍 Examples in Neural Networks
+
+### 🧾 In NLP:
+
+* **BERT** – Learns by predicting masked words (Masked Language Modeling)
+* **GPT** – Learns by predicting the next word in a sentence (Causal LM)
+
+### 🧾 In Vision:
+
+* **SimCLR, MoCo, BYOL** – Contrastive learning of image representations
+* **MAE (Masked Autoencoders)** – Predict missing parts of an image
+
+---
+
+## ✅ Advantages of SSL
+
+| ✅ Pros                    | ❌ Challenges                    |
+| ------------------------- | ------------------------------- |
+| No need for manual labels | Needs careful task design       |
+| Scalable to big datasets  | Can require large compute       |
+| Useful for pretraining    | Risk of learning wrong patterns |
+
+---
+
+## 🧠 Why Use SSL in NNs?
+
+* Trains neural networks on **unlabeled data**, which is abundant
+* Helps in **transfer learning** and **pretraining**
+* Boosts performance with fewer labeled examples
+
+---
+
+## 📌 Summary Table
+
+| Aspect  | Detail                               |
+| ------- | ------------------------------------ |
+| Type    | Self-supervised learning             |
+| Data    | Unlabeled                            |
+| Output  | Pretrained models                    |
+| Used In | NLP, Vision, Speech, Multimodal LLMs |
+
+---
+
+## ✍️ Sample Applications
+
+* Language Models (e.g., BERT, GPT)
+* Vision Transformers (e.g., MAE)
+* Audio classification, video analysis
+
+---
+
+
+# 🤖 RLHF – Reinforcement Learning from Human Feedback
+
+**Topic:** Large Language Models – Fine-tuning
+**Focus:** RLHF (used in ChatGPT, Claude, Bard)
+**Goal:** Improve model behavior using human preferences
+
+---
+
+## 🔍 What is RLHF?
+
+**Reinforcement Learning from Human Feedback (RLHF)** is a fine-tuning technique used to align large language models (LLMs) with human expectations, improving helpfulness, safety, and accuracy.
+
+---
+
+## 🧠 Why RLHF?
+
+Pretrained LLMs can:
+
+* Hallucinate facts
+* Give unsafe or biased outputs
+* Misunderstand task intent
+
+🔧 RLHF corrects this by learning from **human judgments**.
+
+---
+
+## 🧪 RLHF – 3-Step Process
+
+| Step                                | Description                                                                              |
+| ----------------------------------- | ---------------------------------------------------------------------------------------- |
+| **1. Supervised Fine-Tuning (SFT)** | Human trainers write good example answers to guide the base model                        |
+| **2. Reward Model Training**        | Humans rank model responses; a reward model is trained on these rankings                 |
+| **3. Reinforcement Learning (PPO)** | Model is fine-tuned using Proximal Policy Optimization to optimize for preferred outputs |
+
+---
+
+## 📊 Example
+
+**Prompt:** “How can I invest \$1000?”
+
+* **Before RLHF:** Vague, risky, or unhelpful response
+* **After RLHF:** Balanced, safe, and human-aligned advice
+
+---
+
+## ✅ Benefits of RLHF
+
+| ✅ Pros                   | ❌ Cons                          |
+| ------------------------ | ------------------------------- |
+| Improves alignment       | Requires many human annotations |
+| Enhances safety & ethics | More compute and cost           |
+| Better user experience   | May overfit narrow preferences  |
+| Reduces harmful content  | Complex training pipeline       |
+
+---
+
+## 🧩 Models That Use RLHF
+
+* **ChatGPT (OpenAI)** – GPT-3.5, GPT-4
+* **Claude (Anthropic)** – Constitutional AI + RLHF
+* **Google Bard** – Uses similar feedback alignment
+
+---
+
+## 📝 Key Terms
+
+* **SFT**: Supervised fine-tuning with human-written examples
+* **Reward Model**: Learns from ranked outputs
+* **PPO**: Proximal Policy Optimization (RL algorithm)
+
+---
+
+## 📌 In Interviews / Exams, Be Ready to Answer:
+
+* What is RLHF and how does it improve LLMs?
+* Why is human feedback valuable?
+* How does PPO work in this context?
+* Alternatives like **Constitutional AI** or **Direct Preference Optimization (DPO)**
+
+---
 
 
 ---
 ---
-#
+---
+# Large language models
+
+# 🧠 LLM Prompting – Chain of Thought & Step-by-Step
+
+Author: Abhishek Junnarkar  
+Goal: Score 24/24 in the IIT-Delhi Data Science & ML Exam  
+Topic: Chain of Thought Prompting (CoT) & Step-by-Step Reasoning in LLMs
+
+---
+
+## 📘 Summary
+
+| Concept | Description |
+|--------|-------------|
+| **Chain of Thought (CoT)** | A prompting technique where the model is encouraged to **reason out loud** before giving the final answer. Useful in math, logic, and multi-step tasks. |
+| **Step-by-Step Prompting** | Similar to CoT but explicitly instructs the model to "solve step-by-step." Helpful in teaching, debugging, and structured reasoning. |
+| **Common Triggers** | "Let's think step by step", "Solve it step-by-step", "Let's analyze..." |
+| **Use Cases** | Arithmetic, logical reasoning, multi-hop QA, code tracing, math word problems |
+
+---
+
+## ✅ MCQ Questions, Your Answers, and Explanations
+
+| Q | Question | Your Ans | Correct | ✅/❌ | Explanation |
+|--:|----------|----------|---------|------|-------------|
+| 1 | Purpose of CoT prompting? | C | ✅ C | ✅ | It encourages the model to **reason step-by-step**. |
+| 2 | Step-by-step prompting is: | B | ✅ B | ✅ | A prompt style that guides the model’s thinking at inference time. |
+| 3 | CoT is effective in: | C | ✅ C | ✅ | Works best on math, logic, and multi-step reasoning tasks. |
+| 4 | Common signal for CoT? | C | ✅ C | ✅ | "Let's think step by step" is a classic CoT starter. |
+| 5 | Technique with intermediate steps? | B | ✅ B | ✅ | CoT makes reasoning transparent through intermediate logic. |
+| 6 | NOT a benefit of CoT? | C | ❌ D | ❌ | CoT **increases** output length; it doesn't shorten it. |
+| 7 | Phrase used in step-by-step? | C | ✅ C | ✅ | “Solve it step-by-step” is used to get structured logic. |
+| 8 | Expected in CoT before final answer? | C | ✅ C | ✅ | A **detailed reasoning path** is expected. |
+| 9 | CoT vs Zero-shot? | C | ✅ C | ✅ | Zero-shot gives direct answers; CoT explains reasoning. |
+|10 | CoT was inspired by? | B | ✅ B | ✅ | Mimics **human problem-solving patterns**. |
+|11 | Where is step-by-step useful? | C | ✅ C | ✅ | Great for logical puzzles, math, and debugging. |
+|12 | Improves CoT prompting? | C | ✅ C | ✅ | **Few-shot CoT** examples improve LLM performance. |
+
+---
+
+## 🏁 Final Score: **11 / 12**
+
+### 🔁 Revise This
+- CoT usually makes answers **longer**, not shorter (Q6)
+
+---
+
+## 💡 Next Topics to Explore
+- Prompt Engineering: Zero-shot vs Few-shot
+- Few-shot Chain of Thought Prompting
+- Multi-modal prompting (text + image)
+- Build-your-own Prompt Templates using LangChain
+
+---
 
 
 ---
+# Big Gen AI Players
+- ChatGPT (OpenAI): A conversational AI chatbot based on OpenAI’s GPT models, widely used for writing, coding, and customer support.
+- Google Gemini (formerly Bard): Google’s flagship AI assistant and LLM, integrated across Google products like Search, Docs, and Workspace.
+- Microsoft Copilot: AI-powered assistant embedded in Microsoft 365 (Word, Excel, Outlook) and Windows, leveraging OpenAI’s GPT models.
+
+- Perplexity AI: AI-powered search engine and chatbot that retrieves and summarizes real-time web information with citations. Known for fact-checking, academic research, and live updates.
+- DALL·E (OpenAI): AI for generating images from text descriptions, widely used in marketing and digital art.
+- Adobe Firefly: AI-powered tools for creative professionals, integrated into Photoshop and Illustrator for generative design.
+- Meta AI (Llama Models): AI-powered chatbot and foundation model used across Facebook, Instagram, and WhatsApp.
+- Amazon Bedrock: AWS’s AI service providing access to multiple foundation models for enterprises.
+
+# Lang Chain
+
+# 🔗 LangChain – Interview-Style MCQs & Revision
+
+Author: Abhishek Junnarkar  
+Goal: Score 24/24 in the IIT-Delhi Data Science & ML Exam
+
 ---
 
-### Confusion matrix and Precision, accuracy and recall
+## 📚 Key Concepts Summary
 
+- **LangChain** is a Python framework that lets you build powerful applications using Large Language Models (LLMs) by integrating memory, tools, document retrievers, agents, and chains of prompts.
+- Use cases include chatbots with memory, LLMs with API access, document Q&A systems, and tool-using intelligent agents.
 
-## LSTM (Long short Term Memory Neural Network) 
+---
 
+## ✅ MCQ Set with Answers & Explanations
 
-# Topics that can have numerical questions asked:
+| Q | Question | Your Answer | Correct | ✅/❌ | Explanation |
+|--:|----------|-------------|---------|------|-------------|
+| 1 | What is the primary purpose of LangChain? | C | ✅ C | ✅ | LangChain helps build apps that connect LLMs with external data/tools. |
+| 2 | Core concept to chain LLM logic? | B | ✅ B | ✅ | **Chains** organize sequences of prompts and actions. |
+| 3 | What does "Memory" enable? | B | ✅ B | ✅ | Memory allows retaining previous conversation context. |
+| 4 | Component fetching relevant documents? | A | ✅ A | ✅ | **Retriever** searches a document store like FAISS/Pinecone. |
+| 5 | LangChain agents are: | D | ✅ D | ✅ | Agents let LLMs choose which tools to use on the fly. |
+| 6 | Not a vector store? | A | ❌ C | ❌ | NumPy is not a vector DB. Pinecone **is** commonly used with LangChain. |
+| 7 | What does PromptTemplate do? | B | ✅ B | ✅ | Formats dynamic input for prompts like `{question}`. |
+| 8 | Install command? | B | ✅ B | ✅ | Use `pip install langchain`. |
+| 9 | Purpose of tools? | A | ✅ A | ✅ | Tools allow calling calculators, APIs, web search, etc. |
+|10 | Use case for agents? | A | ❌ C | ❌ | Agents shine in multi-step tasks, like reasoning + tool use (e.g., calc). |
+|11 | LangChain is most useful when: | B | ✅ B | ✅ | Especially helpful when LLMs need access to tools or context. |
+|12 | Output of a retriever? | A | ❌ D | ❌ | Retriever returns **documents or chunks**, not tokens. |
 
-1. GINI
-2. Entropy
+---
+
+## 🧠 Final Score: **10 / 12**
+
+### ❗ Revision Notes:
+- NumPy ≠ vector store.
+- Agents are **LLMs + tool selection logic**, useful for calculations, web search, etc.
+- Retrievers return **relevant content**, not token sequences.
+
+---
+
+## ✅ Next Steps
+- Practice more on **Agents, Chains, Memory**.
+- Build a sample LangChain chatbot or PDF Q&A app.
+- Try integrating tools like WolframAlpha, SerpAPI, or a Calculator Tool using LangChain agents.
+
+---
