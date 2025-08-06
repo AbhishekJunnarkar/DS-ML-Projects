@@ -31,6 +31,22 @@
     - Data types 
     - Value ranges
 
+### The data types and non-null counts for your dataset:
+
+| Column               | Type    | Description                                 |
+| -------------------- | ------- | ------------------------------------------- |
+| `longitude`          | float64 | Geographic coordinate                       |
+| `latitude`           | float64 | Geographic coordinate                       |
+| `housing_median_age` | int64   | Age of housing units                        |
+| `total_rooms`        | int64   | Total number of rooms                       |
+| `total_bedrooms`     | float64 | Bedrooms (may have missing in full dataset) |
+| `population`         | int64   | Population in the block                     |
+| `households`         | int64   | Number of households                        |
+| `median_income`      | float64 | Median income in the block                  |
+| `median_house_value` | int64   | 🎯 Target variable                          |
+| `ocean_proximity`    | object  | Categorical variable                        |
+
+
 #### Step 2: Identify the type of problem
 
 | Problem Type   | Target Output     | Example                           |
