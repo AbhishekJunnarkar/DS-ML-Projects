@@ -57,3 +57,12 @@
 #### Step 3: One hot encoding: Convert Categorical to binary
 
 http://localhost:8888/notebooks/PycharmProjects/DS-ML-Projects/Module-Capstone-Project/Project_1_Predict_The_House_Prices/notebook/PROJECT-1-PREDICT-HOUSE-PRICES.ipynb
+
+#### Next EDA Suggestions:
+Check for missing values
+
+Plot correlation heatmap
+
+Visualize target vs income
+
+Analyze categorical column (ocean_proximity)
